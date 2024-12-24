@@ -1,7 +1,9 @@
 import React from 'react'
-
+import Header from '../Header/Header'
 export default function AboutMe() {
   return (
-    <div>AboutMe</div>
+    <div className="wrap w-full min-h-screen bg-customBlack">
+      <Header />
+    </div>
   )
 }
