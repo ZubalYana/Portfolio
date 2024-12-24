@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 export default function App() {
   return (
     <Router>
-      <Header /> {/* Header stays consistent */}
+      <Header />
       <Routes>
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
