@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <div>Projects</div>
+    <div className="wrap w-full min-h-screen bg-customBlack">
+    </div>
   )
 }

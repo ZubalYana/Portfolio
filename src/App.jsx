@@ -2,16 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
+import Header from './components/Header/Header';
 
-function App() {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<AboutMe />} />
-                <Route path="/projects" element={<Projects />} />
-            </Routes>
-        </Router>
-    );
+export default function App() {
+  return (
+    <Router>
+      <Header /> {/* Header stays consistent */}
+      <Routes>
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default App;
