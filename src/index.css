@@ -15,3 +15,7 @@
 ::-webkit-scrollbar-track {
     background-color: #1F1F1F;
 }
+.backgroundText{
+    font-family: Rubik Glitch;
+    text-shadow: #F3EFF5 2px 1px 2px;
+}
