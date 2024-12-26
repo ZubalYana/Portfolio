@@ -6,6 +6,201 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './AboutMe.css';
 export default function AboutMe() {
+  let technicalSkills = [
+    {
+      name: 'HTML',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'Active use in all projects with 2.5 years of experience.',
+    },
+    {
+      name: 'CSS',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'An enjoyable and well-experienced technology with 2.5 years of experience.',
+    },
+    {
+      name: 'SCSS',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'Used for advanced styling with a focus on reusability and maintainability.',
+    },
+    {
+      name: 'JavaScript',
+      icon: '',
+      techType: 'Front-End & Back-End Development',
+      description: 'Core scripting language for dynamic web content, 2.5 years of experience.',
+    },
+    {
+      name: 'Node.js',
+      icon: '',
+      techType: 'Back-End Development',
+      description: 'JavaScript runtime for building scalable server-side applications.',
+    },
+    {
+      name: 'Bootstrap',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'A front-end framework for creating responsive, mobile-first web designs.',
+    },
+    {
+      name: 'MongoDB',
+      icon: '',
+      techType: 'Back-End Development',
+      description: 'A NoSQL database used for storing unstructured data in a flexible format.',
+    },
+    {
+      name: 'Figma',
+      icon: '',
+      techType: 'Design',
+      description: 'Design tool for creating user interfaces, wireframes, and prototypes.',
+    },
+    {
+      name: 'Multer',
+      icon: '',
+      techType: 'Back-End Development',
+      description: 'Middleware for handling file uploads in Node.js applications.',
+    },
+    {
+      name: 'ClickUp',
+      icon: '',
+      techType: 'Project Management',
+      description: 'A productivity platform used for organizing tasks, timelines, and collaboration.',
+    },
+    {
+      name: 'Cookies',
+      icon: '',
+      techType: 'Web Development',
+      description: 'Used for storing data on the client-side to manage sessions and preferences.',
+    },
+    {
+      name: 'LocalStorage',
+      icon: '',
+      techType: 'Web Development',
+      description: 'Browser storage mechanism for storing data locally on the user’s device.',
+    },
+    {
+      name: 'Postman',
+      icon: '',
+      techType: 'API Testing',
+      description: 'A tool for testing APIs, sending requests, and analyzing responses.',
+    },
+    {
+      name: 'Tailwind CSS',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'A utility-first CSS framework for rapid UI development.',
+    },
+    {
+      name: 'React',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'A JavaScript library for building user interfaces, primarily for single-page applications.',
+    },
+    {
+      name: 'Express.js',
+      icon: '',
+      techType: 'Back-End Development',
+      description: 'A minimalist web framework for Node.js to build RESTful APIs.',
+    },
+    {
+      name: 'Axios',
+      icon: '',
+      techType: 'Front-End & Back-End Development',
+      description: 'A promise-based HTTP client for making requests to APIs.',
+    },
+    {
+      name: 'jQuery',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'A JavaScript library to simplify DOM manipulation and event handling.',
+    },
+    {
+      name: 'Font Awesome',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'A library of vector icons and social logos for web projects.',
+    },
+    {
+      name: 'AJAX',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'Technique for making asynchronous requests to the server without refreshing the page.',
+    },
+    {
+      name: 'Git/GitHub',
+      icon: '',
+      techType: 'Version Control',
+      description: 'A version control system for tracking changes in code and collaborating with teams.',
+    },
+    {
+      name: 'API',
+      icon: '',
+      techType: 'Web Development',
+      description: 'A set of rules and protocols for building and interacting with software applications.',
+    },
+    {
+      name: 'JWT',
+      icon: '',
+      techType: 'Security',
+      description: 'JSON Web Tokens used for secure data transmission between parties.',
+    },
+    {
+      name: 'Bcrypt',
+      icon: '',
+      techType: 'Security',
+      description: 'A library for hashing passwords and ensuring data security.',
+    },
+    {
+      name: 'React Routes',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'A routing library for React that allows navigation between views in a single-page app.',
+    },
+    {
+      name: 'Zustand',
+      icon: '',
+      techType: 'State Management',
+      description: 'A small, fast state-management library for React.',
+    },
+    {
+      name: 'Redux',
+      icon: '',
+      techType: 'State Management',
+      description: 'A predictable state container for JavaScript apps, useful for large-scale apps.',
+    },
+    {
+      name: 'Socket.io',
+      icon: '',
+      techType: 'Real-Time Communication',
+      description: 'A library for real-time, bidirectional communication between web clients and servers.',
+    },
+    {
+      name: 'OnRender',
+      icon: '',
+      techType: 'Deployment',
+      description: 'A platform for deploying and hosting web applications.',
+    },
+    {
+      name: 'Koyeb',
+      icon: '',
+      techType: 'Deployment',
+      description: 'Cloud platform for deploying web apps and APIs with ease.',
+    },
+    {
+      name: 'JSONPlaceholder',
+      icon: '',
+      techType: 'API Testing',
+      description: 'A free fake online REST API for testing and prototyping.',
+    },
+    {
+      name: 'Material UI',
+      icon: '',
+      techType: 'Front-End Development',
+      description: 'A popular React UI framework for building modern, responsive, and customizable user interfaces.',
+    },
+  ];
+    
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section className="w-full h-[90vh] p-10 flex flex-col items-center relative">
