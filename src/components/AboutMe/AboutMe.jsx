@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-
 export default function AboutMe() {
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">

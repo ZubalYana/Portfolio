@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 
-export default function Header() {
+export default function Header({openSettings}) {
   return (
     <header className="w-full h-[80px] flex justify-between items-center px-5 py-10 bg-customBlack">
       <img src={logo} alt="logo" className="w-[36px]" />
@@ -27,7 +27,7 @@ export default function Header() {
           </NavLink>
         </li>
       </ul>
-      <FontAwesomeIcon icon={faGear} className="text-customWhite text-2xl" />
+      <FontAwesomeIcon icon={faGear} onClick={openSettings} className="text-customWhite text-2xl" />
     </header>
   );
 }
