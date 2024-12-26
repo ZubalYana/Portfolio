@@ -10,8 +10,22 @@ const SettingsPopup = ({ isOpen, onClose }) => {
       onRequestClose={onClose}
       contentLabel="Settings Popup"
       style={{
-        overlay: { backgroundColor: 'rgba(0, 0, 0, 0.5)' },
-        content: { padding: '20px', borderRadius: '10px' },
+        overlay: { 
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center',
+        },
+        content: { 
+          padding: '20px', 
+          borderRadius: '16px', 
+          width: '650px', 
+          height: '290px',
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        },
       }}
     >
       <h2>Settings</h2>
