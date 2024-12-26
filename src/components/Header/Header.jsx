@@ -7,7 +7,7 @@ import './Header.css';
 
 export default function Header({openSettings}) {
   return (
-    <header className="w-full h-[80px] flex justify-between items-center px-5 py-10 bg-customBlack">
+    <header className="w-full h-[80px] flex justify-between items-center px-10 py-10 bg-customBlack">
       <img src={logo} alt="logo" className="w-[36px]" />
       <ul className="w-[300px] flex justify-between items-center text-customWhite text-base font-medium">
         <li>

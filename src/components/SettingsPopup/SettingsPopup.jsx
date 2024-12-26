@@ -56,7 +56,6 @@ const SettingsPopup = ({ isOpen, onClose }) => {
       <img src={gear2} alt="gear2" className="absolute bottom-[-10%] left-[61%] rotatingGear" />
       <img src={gear3} alt="gear3" className="absolute top-[-15%] left-[45%] rotatingGear" />
       <img src={gear4} alt="gear4" className="absolute bottom-[-8%] left-[5%] rotatingGear" />
-
     </Modal>
   );
 };

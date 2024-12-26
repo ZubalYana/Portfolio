@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import './AboutMe.css';
 export default function AboutMe() {
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
-      <section className="w-full h-[90vh] p-5 flex flex-col items-center relative">
+      <section className="w-full h-[90vh] p-10 flex flex-col items-center relative">
         <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
@@ -37,6 +38,10 @@ export default function AboutMe() {
           </a>
 
         </div>
+      </section>
+
+      <section className='w-full h-[100vh] p-10'>
+        <h3 className='sectionTitle'>{'<Technical skills/>'}</h3>
       </section>
     </div>
   );
