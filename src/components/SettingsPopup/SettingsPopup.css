@@ -1,3 +1,15 @@
 .popupTitle{
     font-family: Russo One;
 }
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.rotatingGear {
+   animation: rotate 10s linear infinite;
+}
+  

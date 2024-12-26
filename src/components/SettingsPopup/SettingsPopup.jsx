@@ -52,10 +52,11 @@ const SettingsPopup = ({ isOpen, onClose }) => {
         <p className='font-light text-xl mr-1'>Page theme:</p>
         <p className='font-medium text-xl cursor-pointer'>dark ( default )</p>
       </div>
-      <img src={gear1} alt="gear1" className='absolute bottom-[-20%] right-[-10%]' />
-      <img src={gear2} alt="gear2" className='absolute bottom-[-10%] left-[61%]' />
-      <img src={gear3} alt="gear3" className='absolute top-[-15%] left-[45%]' />
-      <img src={gear4} alt="gear4" className='absolute bottom-[-8%] left-[5%]' />
+      <img src={gear1} alt="gear1" className="absolute bottom-[-20%] right-[-10%] rotatingGear" />
+      <img src={gear2} alt="gear2" className="absolute bottom-[-10%] left-[61%] rotatingGear" />
+      <img src={gear3} alt="gear3" className="absolute top-[-15%] left-[45%] rotatingGear" />
+      <img src={gear4} alt="gear4" className="absolute bottom-[-8%] left-[5%] rotatingGear" />
+
     </Modal>
   );
 };
