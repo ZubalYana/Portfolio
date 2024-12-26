@@ -3,6 +3,10 @@ import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import './SettingsPopup.css';
+import gear1 from '/gear1.svg';
+import gear2 from '/gear2.svg';
+import gear3 from '/gear3.svg';
+import gear4 from '/gear4.svg';
 Modal.setAppElement('#root'); 
 
 const SettingsPopup = ({ isOpen, onClose }) => {
@@ -21,13 +25,14 @@ const SettingsPopup = ({ isOpen, onClose }) => {
         content: { 
           padding: '25px', 
           borderRadius: '16px', 
-          width: '650px', 
+          width: '600px', 
           height: '290px',
           position: 'absolute',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           color: '#1F1F1F',
+          overflow: 'hidden',
         },
       }}
     >
@@ -47,6 +52,10 @@ const SettingsPopup = ({ isOpen, onClose }) => {
         <p className='font-light text-xl mr-1'>Page theme:</p>
         <p className='font-medium text-xl cursor-pointer'>dark ( default )</p>
       </div>
+      <img src={gear1} alt="gear1" className='absolute bottom-[-20%] right-[-10%]' />
+      <img src={gear2} alt="gear2" className='absolute bottom-[-10%] left-[61%]' />
+      <img src={gear3} alt="gear3" className='absolute top-[-15%] left-[45%]' />
+      <img src={gear4} alt="gear4" className='absolute bottom-[-8%] left-[5%]' />
     </Modal>
   );
 };
