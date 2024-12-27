@@ -5,6 +5,9 @@ import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './AboutMe.css';
+import CircleProgressbar from '../CircleProgressbar/CircleProgressbar';
+import reactIcon from '/technologies/react.svg';
+import { icon } from '@fortawesome/fontawesome-svg-core';
 export default function AboutMe() {
   let technicalSkills = [
     {
@@ -12,182 +15,178 @@ export default function AboutMe() {
       icon: '/technologies/html.svg',
       techType: 'Front-End Development',
       description: 'Active use in all projects with 2.5 years of experience.',
+      progress: 90,
     },
     {
       name: 'CSS',
       icon: '/technologies/css.svg',  
       techType: 'Front-End Development',
       description: 'An enjoyable and well-experienced technology with 2.5 years of experience.',
+      progress: 85,
     },
     {
       name: 'SCSS',
       icon: '/technologies/scss.svg',
       techType: 'Front-End Development',
       description: 'Used for advanced styling with a focus on reusability and maintainability.',
+      progress: 80,
     },
     {
       name: 'JavaScript',
       icon: '/technologies/javascript.svg',
       techType: 'Front-End & Back-End Development',
       description: 'Core scripting language for dynamic web content, 2.5 years of experience.',
+      progress: 75,
     },
     {
       name: 'Node.js',
       icon: '/technologies/nodeJs.svg',
       techType: 'Back-End Development',
       description: 'JavaScript runtime for building scalable server-side applications.',
+      progress: 70,
     },
     {
       name: 'Bootstrap',
       icon: '/technologies/bootstrap.svg',
       techType: 'Front-End Development',
       description: 'A front-end framework for creating responsive, mobile-first web designs.',
+      progress: 65,
     },
     {
       name: 'MongoDB',
       icon: '/technologies/mongoDB.svg',
       techType: 'Back-End Development',
       description: 'A NoSQL database used for storing unstructured data in a flexible format.',
+      progress: 60,
     },
     {
       name: 'Figma',
       icon: '/technologies/figma.svg',
       techType: 'Design',
       description: 'Design tool for creating user interfaces, wireframes, and prototypes.',
+      progress: 75,
     },
     {
       name: 'Multer',
       icon: '/technologies/multer.svg',
       techType: 'Back-End Development',
       description: 'Middleware for handling file uploads in Node.js applications.',
+      progress: 55,
     },
     {
       name: 'ClickUp',
       icon: '/technologies/clickup.png',
       techType: 'Project Management',
       description: 'A productivity platform used for organizing tasks, timelines, and collaboration.',
+      progress: 70,
     },
     {
       name: 'Cookies',
       icon: '/technologies/cookies.svg',
       techType: 'Web Development',
       description: 'Used for storing data on the client-side to manage sessions and preferences.',
+      progress: 65,
     },
     {
       name: 'LocalStorage',
       icon: '/technologies/localStorage.svg',
       techType: 'Web Development',
       description: 'Browser storage mechanism for storing data locally on the user’s device.',
+      progress: 60,
     },
     {
       name: 'Postman',
       icon: '/technologies/postman.svg',
       techType: 'API Testing',
       description: 'A tool for testing APIs, sending requests, and analyzing responses.',
+      progress: 85,
     },
     {
       name: 'Tailwind CSS',
       icon: '/technologies/tailwind.svg',
       techType: 'Front-End Development',
       description: 'A utility-first CSS framework for rapid UI development.',
+      progress: 80,
     },
     {
       name: 'React',
       icon: '/technologies/react.svg',
       techType: 'Front-End Development',
       description: 'A JavaScript library for building user interfaces, primarily for single-page applications.',
+      progress: 70,
     },
     {
       name: 'Express.js',
       icon: '/technologies/express.png',
       techType: 'Back-End Development',
       description: 'A minimalist web framework for Node.js to build RESTful APIs.',
+      progress: 75,
     },
     {
       name: 'Axios',
       icon: '/technologies/axios.png',
       techType: 'Front-End & Back-End Development',
       description: 'A promise-based HTTP client for making requests to APIs.',
+      progress: 85,
     },
     {
       name: 'jQuery',
       icon: '/technologies/jquery.svg',
       techType: 'Front-End Development',
       description: 'A JavaScript library to simplify DOM manipulation and event handling.',
+      progress: 50,
     },
     {
       name: 'Font Awesome',
       icon: '/technologies/fontawesome.svg',
       techType: 'Front-End Development',
       description: 'A library of vector icons and social logos for web projects.',
+      progress: 90,
     },
     {
       name: 'Git/GitHub',
       icon: '/technologies/github.svg',
       techType: 'Version Control',
       description: 'A version control system for tracking changes in code and collaborating with teams.',
+      progress: 80,
     },
-    // {
-    //   name: 'JWT',
-    //   icon: '',
-    //   techType: 'Security',
-    //   description: 'JSON Web Tokens used for secure data transmission between parties.',
-    // },
-    // {
-    //   name: 'Bcrypt',
-    //   icon: '',
-    //   techType: 'Security',
-    //   description: 'A library for hashing passwords and ensuring data security.',
-    // },
-    // {
-    //   name: 'React Routes',
-    //   icon: '',
-    //   techType: 'Front-End Development',
-    //   description: 'A routing library for React that allows navigation between views in a single-page app.',
-    // },
     {
       name: 'Zustand',
       icon: '/technologies/zustand.png',
       techType: 'State Management',
       description: 'A small, fast state-management library for React.',
+      progress: 40,
     },
     {
       name: 'Redux',
       icon: '/technologies/redux.svg',
       techType: 'State Management',
       description: 'A predictable state container for JavaScript apps, useful for large-scale apps.',
+      progress: 60,
     },
-    // {
-    //   name: 'Socket.io',
-    //   icon: '',
-    //   techType: 'Real-Time Communication',
-    //   description: 'A library for real-time, bidirectional communication between web clients and servers.',
-    // },
     {
       name: 'OnRender',
       icon: '/technologies/onrender.png',
       techType: 'Deployment',
       description: 'A platform for deploying and hosting web applications.',
+      progress: 55,
     },
     {
       name: 'Koyeb',
       icon: '/technologies/koyeb.png',
       techType: 'Deployment',
       description: 'Cloud platform for deploying web apps and APIs with ease.',
+      progress: 50,
     },
-    // {
-    //   name: 'JSONPlaceholder',
-    //   icon: '',
-    //   techType: 'API Testing',
-    //   description: 'A free fake online REST API for testing and prototyping.',
-    // },
     {
       name: 'Material UI',
       icon: '/technologies/materialUI.png',
       techType: 'Front-End Development',
       description: 'A popular React UI framework for building modern, responsive, and customizable user interfaces.',
+      progress: 75,
     },
   ];
+  
     
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
@@ -223,9 +222,13 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <section className='w-full h-[100vh] p-10'>
-        <h3 className='sectionTitle'>{'<Technical skills/>'}</h3>
-      </section>
+      <section className="w-full h-[100vh] p-10">
+        <h3 className="sectionTitle">{'<Technical skills/>'}</h3>
+        <CircleProgressbar icon={reactIcon} progress="60" />
+        <CircleProgressbar icon={reactIcon} progress="40" />
+        <CircleProgressbar icon={reactIcon} progress="80" />
+
+        </section>
     </div>
   );
 }
