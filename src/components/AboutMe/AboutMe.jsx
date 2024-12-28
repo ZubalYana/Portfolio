@@ -45,7 +45,7 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <section className="w-full h-[100vh] p-10">
+      <section className="w-full h-[100vh] px-10 py-5">
         <h3 className="sectionTitle">{'<Technical skills/>'}</h3>
         <SkillsSlider />
         </section>
