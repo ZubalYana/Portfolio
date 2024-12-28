@@ -29,7 +29,7 @@ const SoftSkillsProgressbar = ({ name, progress }) => {
     circleCircumference - (currentProgress / 100) * circleCircumference;
 
   return (
-    <div className="circle-progressbar" ref={progressRef}>
+    <div className="circle-progressbar" id='softskills-progressbar' ref={progressRef}>
       <svg
         className="circle-progressbar__svg"
         viewBox="0 0 120 120"
@@ -55,7 +55,7 @@ const SoftSkillsProgressbar = ({ name, progress }) => {
       </svg>
       <div className="circle-progressbar__icon">
       </div>
-      <h4 className='mt-8 text-base text-customWhite text-center uppercase font-normal'>{name}</h4>
+      <h4 className='mt-10 text-base text-customWhite text-center uppercase font-normal'>{name}</h4>
     </div>
   );
 };
