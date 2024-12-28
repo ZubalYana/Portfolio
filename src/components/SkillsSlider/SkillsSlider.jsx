@@ -1,6 +1,7 @@
 import React from 'react'
 import CircleProgressbar from '../CircleProgressbar/CircleProgressbar';
-
+import Slider from 'react-slick';
+import './SkillsSlider.css';
 export default function SkillsSlider() {
     let technicalSkills = [
         {
@@ -179,11 +180,36 @@ export default function SkillsSlider() {
         //   progress: 75,
         // },
     ];
-  return (
-    <>
-    {technicalSkills.map((skill, index) => (
-        <CircleProgressbar key={index} icon={skill.icon} progress={skill.progress} />
-    ))}
-    </>
-  )
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 8,
+        slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 1024, 
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+    };
+    return (
+        <div className="skills-slider">
+          <Slider {...settings}>
+            {technicalSkills.map((skill, index) => (
+              <div key={index} className="skill-slide">
+                <CircleProgressbar icon={skill.icon} progress={skill.progress} />
+              </div>
+            ))}
+          </Slider>
+        </div>
+    );
 }

@@ -6,6 +6,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import './AboutMe.css';
 import SkillsSlider from '../SkillsSlider/SkillsSlider';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 export default function AboutMe() {
       
   return (
