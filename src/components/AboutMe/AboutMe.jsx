@@ -9,6 +9,7 @@ import SkillsSlider from '../SkillsSlider/SkillsSlider';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import SoftSkills from '../SoftSkills/SoftSkills';
+import LanguagesSkills from '../LanguagesSkills/LanguagesSkills';
 export default function AboutMe() {
       
   return (
@@ -50,6 +51,7 @@ export default function AboutMe() {
         <SkillsSlider />
         <h3 className="sectionTitle mt-3">{'<Soft skills/>'}</h3>
         <SoftSkills />
+        <LanguagesSkills />
         </section>
     </div>
   );
