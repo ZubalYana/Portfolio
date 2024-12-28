@@ -1,15 +1,35 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './CircleProgressbar.css'; 
+import './CircleProgressbar.css';
 
 const CircleProgressbar = ({ icon, progress }) => {
-  const circleRadius = 50; 
-  const circleCircumference = 2 * Math.PI * circleRadius; 
+  const circleRadius = 50;
+  const circleCircumference = 2 * Math.PI * circleRadius;
+  const [currentProgress, setCurrentProgress] = useState(0);
+  const progressRef = useRef();
 
-  const progressOffset = circleCircumference - (progress / 100) * circleCircumference;
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setCurrentProgress(progress);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (progressRef.current) observer.observe(progressRef.current);
+
+    return () => {
+      if (progressRef.current) observer.unobserve(progressRef.current);
+    };
+  }, [progress]);
+
+  const progressOffset =
+    circleCircumference - (currentProgress / 100) * circleCircumference;
 
   return (
-    <div className="circle-progressbar">
+    <div className="circle-progressbar" ref={progressRef}>
       <svg
         className="circle-progressbar__svg"
         viewBox="0 0 120 120"
@@ -29,6 +49,7 @@ const CircleProgressbar = ({ icon, progress }) => {
           style={{
             strokeDasharray: circleCircumference,
             strokeDashoffset: progressOffset,
+            transition: 'stroke-dashoffset 1.5s ease-out',
           }}
         />
       </svg>
@@ -41,7 +62,7 @@ const CircleProgressbar = ({ icon, progress }) => {
 
 CircleProgressbar.propTypes = {
   icon: PropTypes.string.isRequired,
-  progress: PropTypes.number.isRequired, 
+  progress: PropTypes.number.isRequired,
 };
 
 export default CircleProgressbar;

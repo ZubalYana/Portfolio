@@ -26,8 +26,8 @@
     stroke: #931FFF; 
     stroke-width: 12;
     stroke-linecap: round;
-    transition: stroke-dashoffset 0.3s ease-in-out;
     z-index: 15;
+    transition: stroke-dashoffset 1.5s ease-out;
   }
   
   .circle-progressbar__icon {
