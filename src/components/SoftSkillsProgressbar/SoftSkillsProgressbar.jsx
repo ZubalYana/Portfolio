@@ -55,7 +55,7 @@ const SoftSkillsProgressbar = ({ name, progress }) => {
       </svg>
       <div className="circle-progressbar__icon">
       </div>
-      <h4>{name}</h4>
+      <h4 className='mt-8 text-base text-customWhite text-center uppercase font-normal'>{name}</h4>
     </div>
   );
 };
