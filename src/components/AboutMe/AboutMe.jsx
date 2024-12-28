@@ -8,7 +8,7 @@ import './AboutMe.css';
 import SkillsSlider from '../SkillsSlider/SkillsSlider';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import SoftSkills from '../SoftSkills/SoftSkills';
 export default function AboutMe() {
       
   return (
@@ -48,6 +48,8 @@ export default function AboutMe() {
       <section className="w-full h-[100vh] px-10 py-5">
         <h3 className="sectionTitle">{'<Technical skills/>'}</h3>
         <SkillsSlider />
+        <h3 className="sectionTitle mt-3">{'<Soft skills/>'}</h3>
+        <SoftSkills />
         </section>
     </div>
   );
