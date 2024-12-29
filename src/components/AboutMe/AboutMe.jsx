@@ -49,7 +49,7 @@ export default function AboutMe() {
       <section className="w-full h-[100vh] px-10 py-5">
         <h3 className="sectionTitle">{'<Technical skills/>'}</h3>
         <SkillsSlider />
-        <h3 className="sectionTitle mt-3">{'<Soft skills/>'}</h3>
+        <h3 className="sectionTitle mt-7">{'<Soft skills/>'}</h3>
         <SoftSkills />
         <LanguagesSkills />
         </section>

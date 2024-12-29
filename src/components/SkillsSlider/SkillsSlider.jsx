@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CircleProgressbar from '../CircleProgressbar/CircleProgressbar';
 import Slider from 'react-slick';
+import SkillsInfoWindow from '../SkillsInfoWindow/SkillsInfoWindow';
 import './SkillsSlider.css';
 export default function SkillsSlider() {
+    const [selectedSkill, setSelectedSkill] = useState(null);
     let technicalSkills = [
         {
           name: 'HTML',
@@ -194,15 +196,42 @@ export default function SkillsSlider() {
           },
         ],
     };
+
+    const handleSkillClick = (skill) => {
+      setSelectedSkill(skill);
+    };
+    const handleClosePopup = () => {
+      setSelectedSkill(null);
+    };
     return (
-        <div className="skills-slider">
-          <Slider {...settings}>
-            {technicalSkills.map((skill, index) => (
-              <div key={index} className="skill-slide">
-                <CircleProgressbar icon={skill.icon} progress={skill.progress} />
-              </div>
-            ))}
-          </Slider>
+      <div className="skills-slider">
+      <Slider {...settings}>
+        {technicalSkills.map((skill, index) => (
+          <div
+            key={index}
+            className="skill-slide"
+            onClick={() => handleSkillClick(skill)}
+          >
+            <CircleProgressbar icon={skill.icon} progress={skill.progress} />
+          </div>
+        ))}
+      </Slider>
+
+      {selectedSkill && (
+        <div className="popup-overlay" onClick={handleClosePopup}>
+          <div
+            className="popup-content"
+            onClick={(e) => e.stopPropagation()} 
+          >
+            <SkillsInfoWindow
+              name={selectedSkill.name}
+              icon={selectedSkill.icon}
+              techType={selectedSkill.techType}
+              description={selectedSkill.description}
+            />
+          </div>
         </div>
+      )}
+    </div>
     );
 }
