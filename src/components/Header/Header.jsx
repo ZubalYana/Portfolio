@@ -27,7 +27,7 @@ export default function Header({openSettings}) {
           </NavLink>
         </li>
       </ul>
-      <FontAwesomeIcon icon={faGear} onClick={openSettings} className="text-customWhite text-2xl" />
+      <FontAwesomeIcon icon={faGear} onClick={openSettings} className="text-customWhite text-2xl cursor-pointer" />
     </header>
   );
 }
