@@ -29,7 +29,7 @@ export default function SoftSkills() {
     ]
   return (
     <>
-    <div className="softSkillsCon w-full flex justify-between mt-3">
+    <div className="softSkillsCon w-full flex justify-between mt-3 h-[200px]">
     {softSkills.map((skill) => <SoftSkillsProgressbar key={skill.name} name={skill.name} progress={skill.progress} />)}
     </div>
     </>
