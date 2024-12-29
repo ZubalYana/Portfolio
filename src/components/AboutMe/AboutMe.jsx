@@ -12,6 +12,7 @@ import SoftSkills from '../SoftSkills/SoftSkills';
 import LanguagesSkills from '../LanguagesSkills/LanguagesSkills';
 import ExperienceRoadmap from '../ExperienceRoadmap/ExperienceRoadmap';
 import EducationCards from '../EducationCards';
+import ProjectCard from '../ProjectCard/ProjectCard';
 export default function AboutMe() {
       
   return (
@@ -54,12 +55,19 @@ export default function AboutMe() {
         <SoftSkills />
         <LanguagesSkills />
       </section>
-      <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center '>
+      <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
         <h3 className="sectionTitle">{'<Experience & education/>'}</h3>
         <div className="experienceEducationCon w-full flex justify-between">
         <ExperienceRoadmap />
         <EducationCards />
         </div>
+      </section>
+      <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
+         <h3 className="sectionTitle">{'<Projects/>'}</h3>
+         <h3 className="sectionSubtitle text-base font-light text-customWhite">{'Take a look at my latest works! Click for more info and details'}</h3>
+         <div className="projectsCon">
+           <ProjectCard />
+         </div>
       </section>
     </div>
   );

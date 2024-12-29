@@ -48,12 +48,12 @@ export default function ExperienceRoadmap() {
     );
 
     containerRefs.current
-      .filter((ref) => ref) // Filter out null or undefined refs
+      .filter((ref) => ref) 
       .forEach((ref) => observer.observe(ref));
 
     return () => {
       containerRefs.current
-        .filter((ref) => ref) // Filter out null or undefined refs
+        .filter((ref) => ref) 
         .forEach((ref) => observer.unobserve(ref));
     };
   }, [activeStep]);
