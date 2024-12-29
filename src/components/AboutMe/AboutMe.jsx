@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SoftSkills from '../SoftSkills/SoftSkills';
 import LanguagesSkills from '../LanguagesSkills/LanguagesSkills';
+import ExperienceRoadmap from '../ExperienceRoadmap/ExperienceRoadmap';
 export default function AboutMe() {
       
   return (
@@ -45,14 +46,19 @@ export default function AboutMe() {
 
         </div>
       </section>
-
       <section className="w-full h-[100vh] px-10 py-5">
         <h3 className="sectionTitle">{'<Technical skills/>'}</h3>
         <SkillsSlider />
         <h3 className="sectionTitle mt-7">{'<Soft skills/>'}</h3>
         <SoftSkills />
         <LanguagesSkills />
-        </section>
+      </section>
+      <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center '>
+        <h3 className="sectionTitle">{'<Experience & education/>'}</h3>
+        <div className="experienceEducationCon w-full">
+        <ExperienceRoadmap />
+        </div>
+      </section>
     </div>
   );
 }
