@@ -171,7 +171,7 @@ export default function SkillsSlider() {
           name: 'Material UI',
           icon: '/technologies/materialUI.png',
           techType: 'Front-End Development',
-          description: 'A popular React UI framework for building modern, responsive, and customizable user interfaces.',
+          description: 'A popular React UI framework for building modern and customizable user interfaces.',
           progress: 75,
         },
     ];
