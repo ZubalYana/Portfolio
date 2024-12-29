@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SoftSkills from '../SoftSkills/SoftSkills';
 import LanguagesSkills from '../LanguagesSkills/LanguagesSkills';
 import ExperienceRoadmap from '../ExperienceRoadmap/ExperienceRoadmap';
+import EducationCards from '../EducationCards';
 export default function AboutMe() {
       
   return (
@@ -55,8 +56,9 @@ export default function AboutMe() {
       </section>
       <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center '>
         <h3 className="sectionTitle">{'<Experience & education/>'}</h3>
-        <div className="experienceEducationCon w-full">
+        <div className="experienceEducationCon w-full flex justify-between">
         <ExperienceRoadmap />
+        <EducationCards />
         </div>
       </section>
     </div>
