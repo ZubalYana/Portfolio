@@ -11,14 +11,14 @@ export default function EducationCards() {
     setIsAnimatingHat(true);
     setTimeout(() => {
       setIsAnimatingHat(false);
-    }, 1000); // Match the animation duration
+    }, 1000);
   };
 
   const handleLogoClick = () => {
     setIsAnimatingLogo(true);
     setTimeout(() => {
       setIsAnimatingLogo(false);
-    }, 1000); // Match the animation duration
+    }, 1000); 
   };
 
   return (

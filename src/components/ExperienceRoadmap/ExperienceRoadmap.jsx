@@ -79,7 +79,7 @@ export default function ExperienceRoadmap() {
             ></div>
           </div>
           <div className="experience_text w-[650px] h-full flex flex-col pl-5">
-            <div className="experience_title text-3xl font-semibold text-customWhite">
+            <div className="experience_title text-2xl font-medium text-customWhite">
               {step.title}
             </div>
             <div className="experience_description text-sm font-light text-customWhite mt-2">
