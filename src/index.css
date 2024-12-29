@@ -19,3 +19,7 @@
     font-family: Rubik Glitch;
     text-shadow: #F3EFF5 2px 1px 2px;
 }
+::selection{
+    background-color: #931FFF;
+    color: #F3EFF5;
+}

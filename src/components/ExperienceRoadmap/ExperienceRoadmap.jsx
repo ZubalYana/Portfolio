@@ -29,7 +29,7 @@ export default function ExperienceRoadmap() {
     },
   ];
 
-  const [activeStep, setActiveStep] = useState(-1); 
+  const [activeStep, setActiveStep] = useState(-1);
   const containerRefs = useRef([]);
 
   useEffect(() => {
@@ -47,10 +47,14 @@ export default function ExperienceRoadmap() {
       { threshold: 0.5 }
     );
 
-    containerRefs.current.forEach((ref) => observer.observe(ref));
+    containerRefs.current
+      .filter((ref) => ref) // Filter out null or undefined refs
+      .forEach((ref) => observer.observe(ref));
 
     return () => {
-      containerRefs.current.forEach((ref) => observer.unobserve(ref));
+      containerRefs.current
+        .filter((ref) => ref) // Filter out null or undefined refs
+        .forEach((ref) => observer.unobserve(ref));
     };
   }, [activeStep]);
 
