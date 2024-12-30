@@ -12,13 +12,7 @@ import SoftSkills from '../SoftSkills/SoftSkills';
 import LanguagesSkills from '../LanguagesSkills/LanguagesSkills';
 import ExperienceRoadmap from '../ExperienceRoadmap/ExperienceRoadmap';
 import EducationCards from '../EducationCards';
-import sheret from '/projectsImgs/sheret.png';
-import travelog from '/projectsImgs/travelog.png';
-import dental from '/projectsImgs/dental.png';
-import honey from '/projectsImgs/honey.png';
-import yantarne from '/projectsImgs/yantarne.png';
-import yorokobi from '/projectsImgs/yorokobi.png';
-import ProjectCard from '../ProjectCard';
+import ProjectsCards from '../ProjectsCards';
 export default function AboutMe() {
       
   return (
@@ -71,9 +65,7 @@ export default function AboutMe() {
       <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
          <h3 className="sectionTitle">{'<Projects/>'}</h3>
          <h3 className="sectionSubtitle text-base font-light text-customWhite">{'Take a look at my latest works! Click for more info and details'}</h3>
-         <div className="projectsCon">
-         <ProjectCard />
-         </div>
+         <ProjectsCards />
       </section>
     </div>
   );
