@@ -39,7 +39,7 @@ export default function ProjectsCards() {
     },
   ]
   return (
-    <div className='projectsContainer flex flex-wrap justify-between w-[1120px] mt-5'>
+    <div className='projectsContainer flex flex-wrap justify-between w-[1120px] mt-7'>
       {projects.map((project, index) => (
             <div className="projectCard w-[360px] h-[200px] rounded-2xl relative group cursor-pointer mb-5" key={index}>
             <img 

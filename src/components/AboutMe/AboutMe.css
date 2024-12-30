@@ -4,3 +4,46 @@
     font-weight: 400;
     color: #F3EFF5;
 }
+.button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #1F1F1F;
+    border: none;
+    padding: 24px 48px;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    border-radius: 12px; 
+    overflow: hidden; 
+    z-index: 0;
+}
+.button--anthe::before {
+    content: '';
+    background: #931FFF;
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.button--anthe:hover::before {
+    background: #931FFF;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.button--anthe span {
+    display: flex;
+    transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    z-index: 1; 
+}
+.button--anthe:hover span {
+    transform: translate3d(-10px, 0, 0);
+}
+.button--anthe span > p, .button--anthe span > svg {
+    color: #F3EFF5;
+}
