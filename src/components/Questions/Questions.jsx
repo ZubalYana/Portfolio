@@ -40,21 +40,22 @@ export default function Questions() {
           >
             <h3>{question.question}</h3>
             <div className="plusCon w-[25px] h-[25px] flex justify-center items-center relative">
-              <div
-                className="horizontalStroke absolute w-full h-[3px] bg-customWhite rounded-md"></div>
+              <div className="horizontalStroke absolute w-full h-[3px] bg-customWhite rounded-md"></div>
               <div
                 className={`verticalStroke absolute w-[3px] h-full bg-customWhite rounded-md transition-transform duration-600 ease-in-out ${
-                    activeIndex === index ? 'rotate-90' : ''
+                  activeIndex === index ? 'rotate-90' : ''
                 }`}
               ></div>
             </div>
           </div>
           <div
-            className={`answer w-full h-[80px] rounded-2xl bg-customBgPurple text-customWhite text-base font-normal mb-4 transition-all duration-500 flex items-center px-4 ${
-              activeIndex === index ? 'block' : 'hidden'
+            className={`answer overflow-hidden transition-[height,opacity] duration-500 ease-in-out ${
+              activeIndex === index ? 'h-auto opacity-100' : 'h-0 opacity-0'
             }`}
           >
-            <h3>{question.answer}</h3>
+            <div className="w-full p-4 rounded-2xl bg-customBgPurple text-customWhite text-base font-normal mb-4">
+              <h3>{question.answer}</h3>
+            </div>
           </div>
         </div>
       ))}
