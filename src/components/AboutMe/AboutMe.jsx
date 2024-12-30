@@ -14,6 +14,7 @@ import ExperienceRoadmap from '../ExperienceRoadmap/ExperienceRoadmap';
 import EducationCards from '../EducationCards';
 import ProjectsCards from '../ProjectsCards';
 import ExploreBtn from '../ExploreBtn/ExploreBtn';
+import Questions from '../Questions/Questions';
 export default function AboutMe() {
       
   return (
@@ -66,9 +67,14 @@ export default function AboutMe() {
       </section>
       <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
          <h3 className="sectionTitle">{'<Projects/>'}</h3>
-         <h3 className="sectionSubtitle text-base font-light text-customWhite">{'Take a look at my latest works! Click for more info and details'}</h3>
+         <h3 className="sectionSubtitle text-base font-light text-customWhite text-center">Take a look at my latest works! Click for more info and details</h3>
          <ProjectsCards />
          <ExploreBtn />
+      </section>
+      <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
+         <h3 className="sectionTitle">{'<FAQ/>'}</h3>
+         <h3 className="sectionSubtitle text-base font-light text-customWhite w-[700px] text-center">Have questions? Search here! There are my answers to the most frequent questions. If you didn’t find what you are looking for, contact me! </h3>
+         <Questions />
       </section>
     </div>
   );
