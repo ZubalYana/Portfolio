@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import myPhoto from '/photo prototype 1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
@@ -17,9 +17,27 @@ import ExploreBtn from '../ExploreBtn/ExploreBtn';
 import Questions from '../Questions/Questions';
 import footerLogo from '/footer logo.png';
 export default function AboutMe() {
-      
+  useEffect(() => {
+    const target = document.querySelector('.lineToAnimate');
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          target.classList.add('animate-width');
+        }
+      },
+      { threshold: 0.7 } 
+    );
+    if (target) {
+      observer.observe(target);
+    }
+    return () => {
+      if (target) {
+        observer.unobserve(target);
+      }
+    };
+  }, []);
+
   return (
-    
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section className="w-full h-[90vh] p-10 flex flex-col items-center relative">
         <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between">
@@ -79,7 +97,7 @@ export default function AboutMe() {
       </section>
       <section className='w-full h-[53vh] px-10 py-5 flex flex-col'>
         <h3 className="sectionTitle">{'<Get in touch!/>'}</h3>
-        <div className='w-full h-[1px] rounded-sm bg-customPurple mt-2'></div>
+        <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2"></div>
         <div className="footerContent w-full flex justify-between mt-7">
           <div className="footerLeftPart">
           <img src={footerLogo} alt="futer logo" className='w-[180px]' />

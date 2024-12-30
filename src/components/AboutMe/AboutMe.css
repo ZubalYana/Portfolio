@@ -8,3 +8,11 @@
     text-shadow: 2px 2px 2px #931FFF;
     margin-left: 4px;
 }
+.lineToAnimate {
+    width: 0;
+    transition: width 2s ease-in-out; 
+}
+.lineToAnimate.animate-width {
+    width: 100%;
+}
+  
