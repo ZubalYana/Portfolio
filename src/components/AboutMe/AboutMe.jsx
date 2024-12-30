@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './AboutMe.css';
 import SkillsSlider from '../SkillsSlider/SkillsSlider';
 import "slick-carousel/slick/slick.css"; 
@@ -14,9 +13,11 @@ import LanguagesSkills from '../LanguagesSkills/LanguagesSkills';
 import ExperienceRoadmap from '../ExperienceRoadmap/ExperienceRoadmap';
 import EducationCards from '../EducationCards';
 import ProjectsCards from '../ProjectsCards';
+import ExploreBtn from '../ExploreBtn/ExploreBtn';
 export default function AboutMe() {
       
   return (
+    
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section className="w-full h-[90vh] p-10 flex flex-col items-center relative">
         <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between">
@@ -67,16 +68,7 @@ export default function AboutMe() {
          <h3 className="sectionTitle">{'<Projects/>'}</h3>
          <h3 className="sectionSubtitle text-base font-light text-customWhite">{'Take a look at my latest works! Click for more info and details'}</h3>
          <ProjectsCards />
-         <button className="button button--anthe">
-            <span>
-              <FontAwesomeIcon
-                 icon={faMagnifyingGlass}
-                 className="text-customWhite hover:text-customWhite transition-colors duration-300 text-2xl"
-              />
-              <p className="text-customWhite font-medium text-xl ml-4">Explore all</p>
-            </span>
-          </button>
-
+         <ExploreBtn />
       </section>
     </div>
   );
