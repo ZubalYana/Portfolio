@@ -37,9 +37,16 @@ export default function AboutMe() {
     };
   }, []);
 
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
-      <section className="w-full h-[90vh] p-10 flex flex-col items-center relative">
+      <section id="about" className="w-full h-[90vh] p-10 flex flex-col items-center relative">
         <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
@@ -70,27 +77,27 @@ export default function AboutMe() {
 
         </div>
       </section>
-      <section className="w-full h-[100vh] px-10 py-5">
+      <section id="skills" className="w-full h-[100vh] px-10 py-5">
         <h3 className="sectionTitle">{'<Technical skills/>'}</h3>
         <SkillsSlider />
         <h3 className="sectionTitle mt-7">{'<Soft skills/>'}</h3>
         <SoftSkills />
         <LanguagesSkills />
       </section>
-      <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
+      <section id='experience' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
         <h3 className="sectionTitle">{'<Experience & education/>'}</h3>
         <div className="experienceEducationCon w-full flex justify-between">
         <ExperienceRoadmap />
         <EducationCards />
         </div>
       </section>
-      <section className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
+      <section id='projects' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
          <h3 className="sectionTitle">{'<Projects/>'}</h3>
          <h3 className="sectionSubtitle text-base font-light text-customWhite text-center">Take a look at my latest works! Click for more info and details</h3>
          <ProjectsCards />
          <ExploreBtn />
       </section>
-      <section className='w-full h-[100vh] px-10 py-10 flex flex-col items-center'>
+      <section id='faq' className='w-full h-[100vh] px-10 py-10 flex flex-col items-center'>
          <h3 className="sectionTitle">{'<FAQ/>'}</h3>
          <h3 className="sectionSubtitle text-base font-light text-customWhite w-[700px] text-center">Have questions? Search here! There are my answers to the most frequent questions. If you didn’t find what you are looking for, contact me! </h3>
          <Questions />
@@ -124,11 +131,11 @@ export default function AboutMe() {
           <div className="footerRightPart w-[360px] flex justify-between">
             <div className='flex flex-col items-end'>
               <h4 className='text-2xl font-semibold text-customPurple'>Navigation</h4>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>Who am I?</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>Skills</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>Projects</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>Education & Experience</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>FAQ</p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('about')}>Who am I?</p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('skills')}>Skills</p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('experience')}>Education & Experience</p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('projects')}>Projects</p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('faq')}>FAQ</p>
             </div>
             <div className='flex flex-col items-end'>
               <h4 className='text-2xl font-semibold text-customPurple'>Contacts</h4>
