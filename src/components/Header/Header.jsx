@@ -27,7 +27,14 @@ export default function Header({openSettings}) {
           </NavLink>
         </li>
       </ul>
-      <FontAwesomeIcon icon={faGear} onClick={openSettings} className="text-customWhite text-2xl cursor-pointer headerGear" />
+      {/* <FontAwesomeIcon icon={faGear} onClick={openSettings} className="text-customWhite text-2xl cursor-pointer headerGear" /> */}
+      <select id="language" className="font-medium text-xl bg-customBlack text-customWhite outline-none">
+          <option value="en" selected className='outline-none'>Eng.</option>
+          <option value="ua">Укр.</option>
+          <option value="fr">Fr.</option>
+          <option value="es">Esp.</option>
+          <option value="it">It.</option>
+        </select>
     </header>
   );
 }
