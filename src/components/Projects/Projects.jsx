@@ -6,6 +6,7 @@ import dental from '/projectsImgs/dental.png';
 import honey from '/projectsImgs/honey.png';
 import yantarne from '/projectsImgs/yantarne.png';
 import yorokobi from '/projectsImgs/yorokobi.png';
+import daunku from '/projectsImgs/daunku.png';
 export default function Projects() {
   let projects = [
     {
@@ -59,6 +60,15 @@ export default function Projects() {
       description: 'Yorokobi is a Japanese cuisine restaurant concept born from my passion for Japanese culture and vivid imagination. While it may not match the sophistication or functionality of my more recent projects, it holds a special place in my journey as a developer. This project marked a significant milestone, allowing me to combine creativity with technical skills, and it was one I truly enjoyed and felt proud of completing.',
       tags: ['HTML', 'CSS', 'JS', 'Node.js', 'Express', 'Axios', 'MongoDB'],
       repoLink: 'https://github.com/ZubalYana/Yorokobi',
+      presentationLink: '',
+      projectLink: ''
+    },
+    {
+      name: 'Daunku',
+      img: daunku,
+      description: 'Daunku is an online shop for selling plants, designed to provide a seamless shopping experience. This project offered me valuable hands-on experience and features a wide range of functionality. Customers can place orders and track them conveniently via email or a Telegram bot. The admin panel is equipped with robust tools, including the ability to manage inventory, handle user accounts, and send newsletters.',
+      tags: ['HTML', 'CSS', 'JS', 'Node.js', 'Express', 'Axios', 'MongoDB'],
+      repoLink: 'https://github.com/ZubalYana/Daunku',
       presentationLink: '',
       projectLink: ''
     },
