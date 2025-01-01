@@ -75,7 +75,7 @@ export default function Projects() {
 
   ]
   return (
-    <div className="wrap w-full min-h-screen bg-customBlack p-10 flex flex-col items-center">
+    <div className="wrap w-full min-h-screen bg-customBlack px-10 py-5 flex flex-col items-center">
        {projects.map((project, index) => (
         <ExtendedProjectCard key={index} {...project} /> 
       ))}
