@@ -1,11 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import logo from '/page logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGear } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 
-export default function Header({openSettings}) {
+export default function Header({ openSettings }) {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
+
   return (
     <header className="w-full h-[80px] flex justify-between items-center px-10 py-10 bg-customBlack">
       <img src={logo} alt="logo" className="w-[36px]" />
@@ -15,7 +20,7 @@ export default function Header({openSettings}) {
             to="/about"
             className={({ isActive }) => (isActive ? 'active' : '')}
           >
-            &lt;/About me&gt;
+            &lt;/{t('about')}&gt;
           </NavLink>
         </li>
         <li>
@@ -23,18 +28,22 @@ export default function Header({openSettings}) {
             to="/projects"
             className={({ isActive }) => (isActive ? 'active' : '')}
           >
-            &lt;/Projects&gt;
+            &lt;/{t('projects')}&gt;
           </NavLink>
         </li>
       </ul>
-      {/* <FontAwesomeIcon icon={faGear} onClick={openSettings} className="text-customWhite text-2xl cursor-pointer headerGear" /> */}
-      <select id="language" className="font-medium text-xl bg-customBlack text-customWhite outline-none">
-          <option value="en" selected className='outline-none'>Eng.</option>
-          <option value="ua">Укр.</option>
-          <option value="fr">Fr.</option>
-          <option value="es">Esp.</option>
-          <option value="it">It.</option>
-        </select>
+      <select
+        id="language"
+        className="font-medium text-xl bg-customBlack text-customWhite outline-none"
+        onChange={changeLanguage}
+        defaultValue={i18n.language}
+      >
+        <option value="en">Eng.</option>
+        <option value="ua">Укр.</option>
+        <option value="fr">Fr.</option>
+        <option value="es">Esp.</option>
+        <option value="it">It.</option>
+      </select>
     </header>
   );
 }
