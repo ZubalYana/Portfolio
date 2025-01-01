@@ -174,6 +174,13 @@ export default function SkillsSlider() {
           description: 'A popular React UI framework for building modern and customizable user interfaces.',
           progress: 75,
         },
+        {
+          name: 'Telegram bot API',
+          icon: '/technologies/telegram.svg',
+          techType: 'Telegram bots',
+          description: 'An instrument for building Telegram bots to interact with users.',
+          progress: 80,
+        },
     ];
     const settings = {
         dots: false,
