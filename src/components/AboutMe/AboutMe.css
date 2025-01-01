@@ -15,4 +15,12 @@
 .lineToAnimate.animate-width {
     width: 100%;
 }
+.socialMediaIcon{
+    transition: all 0.4s ease;
+}
+.socialMediaIcon:hover {
+    transform: scale(1.3) rotate(15deg);
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
   
