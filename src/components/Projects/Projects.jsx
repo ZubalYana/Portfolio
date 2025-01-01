@@ -31,7 +31,7 @@ export default function Projects() {
       name: 'DENTAL',
       img: dental,
       description: 'This webpage is for a dental clinic and offers a range of functions with a user-friendly experience. It was my first major React project, featuring tools for patients to leave reviews, register, and book appointments. On the administrative side, it includes an intuitive admin panel to manage the clinic\'s services efficiently. This project was a valuable step in building dynamic and interactive web applications.',
-      tags: ['HTML', 'CSS', 'JS', 'Node.js', 'Multer', 'Express', 'Dotenv', 'MongoDB', 'React'],
+      tags: ['HTML', 'CSS', 'JS', 'Node.js', 'Multer', 'Express', 'Dotenv', 'MongoDB', 'React', 'React Modal'],
       repoLink: 'https://github.com/ZubalYana/Dental',
       presentationLink: '',
       projectLink: ''
