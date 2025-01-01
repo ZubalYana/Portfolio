@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import graduationHat from '/graduationHat.svg';
 import creatorLogo from '/creatorLogo.svg';
 import 'animate.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function EducationCards() {
   const [isAnimatingHat, setIsAnimatingHat] = useState(false);
   const [isAnimatingLogo, setIsAnimatingLogo] = useState(false);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      offset: 200,
+    });
+  }, []);
   const handleHatClick = () => {
     setIsAnimatingHat(true);
     setTimeout(() => {
@@ -23,7 +29,7 @@ export default function EducationCards() {
 
   return (
     <div className='eduCardsContainer h-[93%] w-[50%] mt-6 flex flex-col items-center justify-around'>
-      <div className="eduCard w-[380px] h-[240px] rounded-2xl border-customPurple border-4 p-5 flex flex-col items-center justify-center">
+      <div className="eduCard w-[380px] h-[240px] rounded-2xl border-customPurple border-4 p-5 flex flex-col items-center justify-center" data-aos="fade-down-left">
         <img
           src={graduationHat}
           alt="graduation logo"
@@ -34,7 +40,7 @@ export default function EducationCards() {
           I graduated from the secondary <span className='font-medium'>school of Shklo</span> in Ukraine with red diploma and multiply won competitions
         </p>
       </div>
-      <div className="eduCard w-[380px] h-[240px] rounded-2xl border-customPurple border-4 p-5 flex flex-col items-center justify-center">
+      <div className="eduCard w-[380px] h-[240px] rounded-2xl border-customPurple border-4 p-5 flex flex-col items-center justify-center" data-aos="fade-down-left">
         <img
           src={creatorLogo}
           alt="creator logo"

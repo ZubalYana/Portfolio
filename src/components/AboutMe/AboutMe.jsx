@@ -16,6 +16,8 @@ import ProjectsCards from '../ProjectsCards';
 import ExploreBtn from '../ExploreBtn/ExploreBtn';
 import Questions from '../Questions/Questions';
 import footerLogo from '/footer logo.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function AboutMe() {
   useEffect(() => {
     const target = document.querySelector('.lineToAnimate');
@@ -36,7 +38,12 @@ export default function AboutMe() {
       }
     };
   }, []);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      offset: 200,
+    });
+  }, []);
   function scrollToSection(id) {
     const section = document.getElementById(id);
     if (section) {
@@ -52,10 +59,10 @@ export default function AboutMe() {
           <span className="backgroundText">Zubal</span>
         </p>
         <img src={myPhoto} alt="my photo" className="h-[630px] absolute bottom-[0%]" />
-        <div className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%]">
+        <div className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%]" data-aos="fade-down-right">
           &lt;Hello there! I'm <b>Yana Zubal</b>, a web developer and UI/UX designer based in Ukraine. My passion lies in creating beautiful and functional <b>web experiences</b>. I'm very glad you decided to explore my portfolio page, where I showcase my skills, projects, and the journey I've embarked on as a <b>designer</b> and <b>developer</b>. I am constantly improving myself by learning new technologies and acquiring new soft skills.&gt;
         </div>
-        <div className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%]">
+        <div className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%]" data-aos="fade-up-left">
           &lt;Don't hesitate to explore my <b>projects</b> and learn more about me. Each project is a testament to my commitment to quality and <b>continuous learning</b>. Whether it's a simple website or a complex application, I strive to deliver the best possible <b>user experience</b>. With every new project I create, I feel a sense of growth and a passion for facing and overcoming new <b>challenges</b>.&gt;
         </div>
         <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%]">

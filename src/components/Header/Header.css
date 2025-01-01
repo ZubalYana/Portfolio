@@ -1,5 +1,10 @@
 ul li a.active {
-    text-shadow: #931FFF 2px 2px 2px;
+    text-shadow: #931FFF 2px 1px 2px;
+    transition: all 0.4s ease;
+}
+ul li a:hover:not(.active) {
+    text-shadow: #931FFF 2px 1px 2px;
+    transition: all 0.4s ease;
 }
 .headerGear{
     transition: all 0.6s ease;
