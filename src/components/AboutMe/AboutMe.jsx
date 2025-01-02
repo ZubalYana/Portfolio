@@ -18,7 +18,10 @@ import Questions from '../Questions/Questions';
 import footerLogo from '/footer logo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation, Trans } from 'react-i18next';
+
 export default function AboutMe() {
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     const target = document.querySelector('.lineToAnimate');
     const observer = new IntersectionObserver(
@@ -50,7 +53,6 @@ export default function AboutMe() {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section id="about" className="w-full h-[90vh] p-10 flex flex-col items-center relative">
@@ -59,12 +61,20 @@ export default function AboutMe() {
           <span className="backgroundText">Zubal</span>
         </p>
         <img src={myPhoto} alt="my photo" className="h-[630px] absolute bottom-[0%]" />
-        <div className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%]" data-aos="fade-down-right">
-          &lt;Hello there! I'm <b>Yana Zubal</b>, a web developer and UI/UX designer based in Ukraine. My passion lies in creating beautiful and functional <b>web experiences</b>. I'm very glad you decided to explore my portfolio page, where I showcase my skills, projects, and the journey I've embarked on as a <b>designer</b> and <b>developer</b>. I am constantly improving myself by learning new technologies and acquiring new soft skills.&gt;
-        </div>
-        <div className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%]" data-aos="fade-up-left">
-          &lt;Don't hesitate to explore my <b>projects</b> and learn more about me. Each project is a testament to my commitment to quality and <b>continuous learning</b>. Whether it's a simple website or a complex application, I strive to deliver the best possible <b>user experience</b>. With every new project I create, I feel a sense of growth and a passion for facing and overcoming new <b>challenges</b>.&gt;
-        </div>
+          <div
+            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%]"          
+            data-aos="fade-down-right"
+          >
+            <Trans i18nKey="welcomeMessage" components={{ bold: <strong/> }} />
+          </div>
+
+          <div
+            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%]"
+            data-aos="fade-up-left"
+          >
+            <Trans i18nKey="exploreMessage" />
+          </div>
+
         <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%]">
           <a href="https://github.com/ZubalYana" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="text-customPurple socialMediaIcon" />
@@ -85,9 +95,13 @@ export default function AboutMe() {
         </div>
       </section>
       <section id="skills" className="w-full h-[100vh] px-10 py-5">
-        <h3 className="sectionTitle">{'<Technical skills/>'}</h3>
+        <h3 className="sectionTitle">
+        <Trans i18nKey="skillsSectionTitle"/>
+        </h3>
         <SkillsSlider />
-        <h3 className="sectionTitle mt-7">{'<Soft skills/>'}</h3>
+        <h3 className="sectionTitle mt-7">
+        <Trans i18nKey="softSkillsTitle"/>
+        </h3>
         <SoftSkills />
         <LanguagesSkills />
       </section>

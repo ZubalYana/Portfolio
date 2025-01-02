@@ -39,10 +39,8 @@ export default function Header({ openSettings }) {
         defaultValue={i18n.language}
       >
         <option value="en">Eng.</option>
-        <option value="ua">Укр.</option>
         <option value="fr">Fr.</option>
-        <option value="es">Esp.</option>
-        <option value="it">It.</option>
+        <option value="ua">Укр.</option>
       </select>
     </header>
   );
