@@ -15,6 +15,8 @@ const resources = {
       projectsSectionTitle: "<Projects/>",
       projectsSectionSubtitle: "Take a look at my latest works! Click for more info and details",
       exploreBtn: "Explore",
+      faqSectionTitle: "<FAQ/>",
+      faqSectionSubtitle: "Have questions? Search here! There are my answers to the most frequent questions. If you didn’t find what you are looking for, contact me!",
     },
   },
   ua: {
@@ -29,6 +31,8 @@ const resources = {
       projectsSectionTitle: "<Проекти/>",
       projectsSectionSubtitle: "Погляньте на мої останні роботи! Клікніть, щоб отримати більше інформації та деталей",
       exploreBtn: "Поглянути",
+      faqSectionTitle: "<Поширені питання/>",
+      faqSectionSubtitle: "Маєте питання? Погляньте тут! Тут я відповіла на найчастіші запитання. Якщо ви не знайдете відповіді на своє, зверніться до мене!",
     },
   },
   fr: {
@@ -43,6 +47,8 @@ const resources = {
       projectsSectionTitle: "<Projets/>",
       projectsSectionSubtitle: "Regardez mes derniers travaux! Cliquez pour plus d'informations et de détails",
       exploreBtn: "Explorer",
+      faqSectionTitle: "<Questions fréquentes/>",
+      faqSectionSubtitle: "Avez-vous des questions? Cherchez ici! Il y a mes résponses aux questions les plus fréquentes. Si vous n'avez pas trouvé ce que vous cherchez, contactez-moi!",
     },
   },
 };

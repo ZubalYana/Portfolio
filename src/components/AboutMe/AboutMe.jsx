@@ -125,8 +125,12 @@ export default function AboutMe() {
          <ExploreBtn />
       </section>
       <section id='faq' className='w-full h-[100vh] px-10 py-10 flex flex-col items-center'>
-         <h3 className="sectionTitle">{'<FAQ/>'}</h3>
-         <h3 className="sectionSubtitle text-base font-light text-customWhite w-[700px] text-center">Have questions? Search here! There are my answers to the most frequent questions. If you didn’t find what you are looking for, contact me! </h3>
+         <h3 className="sectionTitle">
+         <Trans i18nKey="faqSectionTitle"/>
+         </h3>
+         <h3 className="sectionSubtitle text-base font-light text-customWhite w-[700px] text-center">
+         <Trans i18nKey="faqSectionSubtitle"/>
+         </h3>
          <Questions />
       </section>
       <section className='w-full h-[53vh] px-10 py-5 flex flex-col relative'>
