@@ -1,6 +1,7 @@
 import React from 'react';
 import './SkillsInfoWindow.css';
 export default function SkillsInfoWindow({ name, icon, techType, description }) {
+  
   return (
     <div className="w-[400px] h-[180px] rounded-2xl bg-customWhite p-6 fixed bottom-[40px] left-[40px]">
       <div className="IconInfoCon flex">

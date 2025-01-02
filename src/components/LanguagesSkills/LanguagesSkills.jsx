@@ -1,11 +1,38 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function LanguagesSkills() {
+  const { t, i18n } = useTranslation();
+  
   const languages = [
-    { name: 'Ukrainian', progress: 95, description: 'Native language' },
-    { name: 'English', progress: 70, description: 'B2 level' },
-    { name: 'French', progress: 20, description: 'A2 level' },
-    { name: 'Japanese', progress: 15, description: 'JLPT N5' },
+    {
+      name: 'Ukrainian',
+      progress: 95,
+      description: 'Native language',
+      uaDescription: 'Рідна мова',
+      frDescription: 'Langue maternelle',
+    },
+    {
+      name: 'English',
+      progress: 70,
+      description: 'B2 level',
+      uaDescription: 'Рівень B2',
+      frDescription: 'Niveau B2',
+    },
+    {
+      name: 'French',
+      progress: 20,
+      description: 'A2 level',
+      uaDescription: 'Рівень A2',
+      frDescription: 'Niveau A2',
+    },
+    {
+      name: 'Japanese',
+      progress: 15,
+      description: 'JLPT N5',
+      uaDescription: 'JLPT N5',
+      frDescription: 'JLPT N5',
+    },
   ];
 
   const [visible, setVisible] = useState(false);
@@ -51,7 +78,7 @@ export default function LanguagesSkills() {
             {language.name}
           </p>
           <p className='languageDescription text-customWhite text-base font-light'>
-            {language.description}
+            {t(language[`${i18n.language}Description`] || language.description)}
           </p>
         </div>
       ))}
