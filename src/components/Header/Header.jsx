@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '/page logo.png';
@@ -10,6 +10,15 @@ export default function Header({ openSettings }) {
   const changeLanguage = (event) => {
     i18n.changeLanguage(event.target.value);
   };
+
+  useEffect(() => {
+    const body = document.body;
+    if (i18n.language === 'ua') {
+      body.classList.add('ukrainian');
+    } else {
+      body.classList.remove('ukrainian');
+    }
+  }, [i18n.language]); 
 
   return (
     <header className="w-full h-[80px] flex justify-between items-center px-10 py-10 bg-customBlack">

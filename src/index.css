@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+body{
     font-family: Fredoka;
 }
+body.ukrainian {
+    font-family: 'Montserrat', sans-serif;
+  }
 ::-webkit-scrollbar {
     width: 8px;
 }
