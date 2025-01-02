@@ -134,12 +134,14 @@ export default function AboutMe() {
          <Questions />
       </section>
       <section className='w-full h-[53vh] px-10 py-5 flex flex-col relative'>
-        <h3 className="sectionTitle">{'<Get in touch!/>'}</h3>
+      <h3 className="sectionTitle"><Trans i18nKey="footerSectionTitle" /></h3>
         <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2"></div>
         <div className="footerContent w-full flex justify-between mt-7">
           <div className="footerLeftPart">
           <img src={footerLogo} alt="futer logo" className='w-[180px]' />
-          <p className='w-[420px] font-light text-base text-customWhite mt-2'>Got interested? Have questions or suggestions? Contact me for cooperation! I’d like to discuss any information with you and work together!</p>
+          <p className='w-[420px] font-light text-base text-customWhite mt-2'>
+           <Trans i18nKey="footerSectionSubtitle" />
+          </p>
           <div className="socialMediaIcons w-[280px] flex justify-between items-center mt-6">
           <a href="https://github.com/ZubalYana" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="text-customPurple socialMediaIcon" />
@@ -161,21 +163,24 @@ export default function AboutMe() {
           </div>
           <div className="footerRightPart w-[360px] flex justify-between">
             <div className='flex flex-col items-end'>
-              <h4 className='text-2xl font-semibold text-customPurple'>Navigation</h4>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('about')}>Who am I?</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('skills')}>Skills</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('experience')}>Education & Experience</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('projects')}>Projects</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('faq')}>FAQ</p>
+              <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="navigation"/></h4>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('about')}><Trans i18nKey="navElement1"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('skills')}><Trans i18nKey="navElement2"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('experience')}><Trans i18nKey="navElement3"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('projects')}><Trans i18nKey="navElement4"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('faq')}><Trans i18nKey="navElement5"/></p>
             </div>
             <div className='flex flex-col items-end'>
-              <h4 className='text-2xl font-semibold text-customPurple'>Contacts</h4>
+              <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="contacts"/></h4>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>+380 97 205 87 86</p>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>zubalana0@gmail.com</p>
             </div>
           </div>
         </div>
-        <div className="copyright w-[95%] flex justify-center text-customWhite absolute bottom-4 font-light text-xs">Copyright © 2024 <span className='copyrightAuthor'>Yana Zubal</span>. All rights reserved.</div>
+        <div className="copyright w-[95%] flex justify-center text-customWhite absolute bottom-4 font-light text-xs">
+          <Trans i18nKey="copyright"/>
+        </div>
+
       </section>
     </div>
   );
