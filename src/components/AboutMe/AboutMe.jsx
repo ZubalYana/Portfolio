@@ -106,15 +106,21 @@ export default function AboutMe() {
         <LanguagesSkills />
       </section>
       <section id='experience' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
-        <h3 className="sectionTitle">{'<Experience & education/>'}</h3>
+        <h3 className="sectionTitle">
+        <Trans i18nKey="experienceSectionTitle"/>
+        </h3>
         <div className="experienceEducationCon w-full flex justify-between">
         <ExperienceRoadmap />
         <EducationCards />
         </div>
       </section>
       <section id='projects' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
-         <h3 className="sectionTitle">{'<Projects/>'}</h3>
-         <h3 className="sectionSubtitle text-base font-light text-customWhite text-center">Take a look at my latest works! Click for more info and details</h3>
+        <h3 className="sectionTitle">
+          <Trans i18nKey="projectsSectionTitle"/>
+        </h3>
+        <h3 className="sectionSubtitle text-base font-light text-customWhite text-center">
+          <Trans i18nKey="projectsSectionSubtitle"/>
+        </h3>
          <ProjectsCards />
          <ExploreBtn />
       </section>

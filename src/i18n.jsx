@@ -11,6 +11,10 @@ const resources = {
       exploreMessage: `Don't hesitate to explore my <strong>projects</strong> and learn more about me. Each project is a testament to my commitment to quality and <strong>continuous learning</strong>. Whether it's a simple website or a complex application, I strive to deliver the best possible <strong>user experience</strong>. With every new project I create, I feel a sense of growth and a passion for facing and overcoming new <strong>challenges</strong>.`,
       skillsSectionTitle: "<Technical skills/>",
       softSkillsTitle: "<Soft skills/>",
+      experienceSectionTitle: "<Experience & education/>",
+      projectsSectionTitle: "<Projects/>",
+      projectsSectionSubtitle: "Take a look at my latest works! Click for more info and details",
+      exploreBtn: "Explore",
     },
   },
   ua: {
@@ -21,6 +25,10 @@ const resources = {
       exploreMessage: `Не соромтеся досліджувати мої <strong>проєкти</strong> та дізнаватися більше про мене. Кожен проєкт — це свідчення моєї відданості якості та <strong>безперервному навчанню</strong>. Незалежно від того це простий сайт чи складний додаток, я прагну забезпечити найкращий <strong>користувацький досвід</strong>. З кожним новим проєктом я відчуваю зростання та пристрасть до подолання нових <strong>викликів</strong>.`,
       skillsSectionTitle: "<Технічні навички/>",
       softSkillsTitle: "<Гнучкі навички/>",
+      experienceSectionTitle: "<Досвід та освіта/>",
+      projectsSectionTitle: "<Проекти/>",
+      projectsSectionSubtitle: "Погляньте на мої останні роботи! Клікніть, щоб отримати більше інформації та деталей",
+      exploreBtn: "Поглянути",
     },
   },
   fr: {
@@ -31,6 +39,10 @@ const resources = {
       exploreMessage: `N'hésitez pas à explorer mes <strong>projets</strong> et à en apprendre davantage sur moi. Chaque projet est un témoignage de mon engagement envers la qualité et <strong>l'apprentissage continu</strong>. Qu'il s'agisse d'un simple site web ou d'une application complexe, je m'efforce d'offrir la meilleure <strong>expérience utilisateur</strong>. Avec chaque nouveau projet, je ressens une croissance et une passion pour relever et surmonter de nouveaux <strong>défis</strong>.`,
       skillsSectionTitle: "<Compétences techniques/>",
       softSkillsTitle: "<Compétences relationnelles/>",
+      experienceSectionTitle: "<Expériences et formations/>",
+      projectsSectionTitle: "<Projets/>",
+      projectsSectionSubtitle: "Regardez mes derniers travaux! Cliquez pour plus d'informations et de détails",
+      exploreBtn: "Explorer",
     },
   },
 };
