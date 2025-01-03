@@ -65,12 +65,16 @@ export default function EducationCards() {
           className="eduCard w-[380px] h-[240px] rounded-2xl border-customPurple border-4 p-5 flex flex-col items-center justify-center" 
           data-aos="fade-down-left"
         >
-          <img
-            src={index === 0 ? graduationHat : creatorLogo}
-            alt={index === 0 ? "graduation logo" : "creator logo"}
-            className={` ${index === 0 ? isAnimatingHat : isAnimatingLogo ? 'animate__animated animate__swing' : ''}`}
-            onClick={index === 0 ? handleHatClick : handleLogoClick}
-          />
+        <img
+          src={index === 0 ? graduationHat : creatorLogo}
+          alt={index === 0 ? "graduation logo" : "creator logo"}
+          className={`${index === 0 && isAnimatingHat ? 'animate__animated animate__swing' : ''} ${index === 1 && isAnimatingLogo ? 'animate__animated animate__swing' : ''}`}
+          onClick={index === 0 ? handleHatClick : handleLogoClick}
+          onAnimationEnd={() => {
+            if (index === 0) setIsAnimatingHat(false);
+           if (index === 1) setIsAnimatingLogo(false);
+         }}
+        />
           <p className='text-customWhite font-light text-sm text-center mt-5' dangerouslySetInnerHTML={{ __html: getDescription(desc) }} />
         </div>
       ))}

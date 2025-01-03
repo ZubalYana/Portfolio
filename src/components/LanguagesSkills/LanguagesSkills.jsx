@@ -62,10 +62,10 @@ export default function LanguagesSkills() {
   return (
     <div
       ref={containerRef}
-      className='languagesContainer w-full flex justify-between mt-16'
+      className='languagesContainer w-full flex justify-between mt-16 sm:flex-wrap sm:mt-8 md:mt-16 md-w-[80%] lg:flex-none lg-w-full'
     >
       {languages.map((language, index) => (
-        <div className='language' key={index}>
+        <div className='language mb-7' key={index}>
           <div className='languageProgress w-[225px] h-[11px] rounded-2xl bg-customBgPurple'>
             <div
               className='languageProgressbar h-[11px] rounded-2xl bg-customPurple transition-all duration-1000'

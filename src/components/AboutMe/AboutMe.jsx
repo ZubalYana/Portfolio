@@ -75,7 +75,7 @@ export default function AboutMe() {
           </div>
 
           <div
-            className="textCon w-[570px] h-[320px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light  sm:mt-[450px] md:w-[700px] md:h-[250px] lg:hidden"          
+            className="textCon w-[570px] h-[320px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light  sm:mt-[420px] md:w-[700px] md:h-[250px] lg:hidden"          
             data-aos="fade-down-right"
           >
             <Trans i18nKey="welcomeMessage" components={{ bold: <strong/> }} />
@@ -84,7 +84,7 @@ export default function AboutMe() {
 
 
 
-        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] sm:top-[440px] lg:right-[40px] lg:top-[120px] xl:right-[5%] 2xl:top-[23%] 2xl:right-[7%]">
+        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] sm:top-[420px] lg:right-[40px] lg:top-[120px] xl:right-[5%] 2xl:top-[23%] 2xl:right-[7%]">
           <a href="https://github.com/ZubalYana" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="text-customPurple socialMediaIcon" />
           </a>
@@ -103,8 +103,8 @@ export default function AboutMe() {
 
         </div>
       </section>
-      <section id="skills" className="w-full h-[100vh] px-10 py-5">
-        <h3 className="sectionTitle">
+      <section id="skills" className="w-full h-[100vh] px-10 py-5 sm:h-[165vh] lg:h-[100vh]">
+        <h3 className="sectionTitle sm:text-sm">
         <Trans i18nKey="skillsSectionTitle"/>
         </h3>
         <SkillsSlider />

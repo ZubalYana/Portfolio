@@ -57,7 +57,7 @@ export default function SoftSkills() {
   };
 
   return (
-    <div className="softSkillsCon w-full flex justify-between mt-3 h-[200px]">
+    <div className="softSkillsCon w-full flex justify-between mt-3 sm:h-[450px] sm:flex-wrap md:w-[80%] md:h-[450px] lg:h-[200px] lg:flex-none lg:w-[100%]">
       {softSkills.map((skill) => {
         const translatedName = getTranslatedName(skill); 
         return (

@@ -244,15 +244,15 @@ export default function SkillsSlider() {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 640,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 4,
             },
           },
           {
-            breakpoint: 1024, 
+            breakpoint: 768, 
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 4,
             },
           },
         ],
@@ -278,7 +278,7 @@ export default function SkillsSlider() {
     };
 
     return (
-      <div className="skills-slider">
+      <div className="skills-slider mt-4">
       <Slider {...settings}>
         {technicalSkills.map((skill, index) => (
           <div
