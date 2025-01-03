@@ -56,19 +56,19 @@ export default function AboutMe() {
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section id="about" className="w-full h-[90vh] p-10 flex flex-col items-center relative sm:h-[140vh] md:h-[130vh] lg:h-[70vh] 2xl:h-[90vh]">
-        <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
+        <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
         </p>
         <img src={myPhoto} alt="my photo" className="h-[630px] absolute bottom-[0%] sm:h-[450px] sm:bottom-auto sm:top-[10px] lg:h-[470px] lg:top-[30px] 2xl:h-[630px] 2xl:top-auto 2xl:bottom-[0%]" />
           <div
-            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%] sm:hidden lg:block lg:left-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm 2xl:left-[8%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[8%] 2xl:text-base"          
+            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%] sm:hidden lg:block lg:left-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:left-[5%] xl:top-[10%] 2xl:left-[8%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[8%] 2xl:text-base"          
             data-aos="fade-down-right"
           >
             <Trans i18nKey="welcomeMessage" components={{ bold: <strong/> }} />
           </div>
           <div
-            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%] sm:hidden lg:block lg:right-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm  2xl:right-[7%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[30%] 2xl:text-base"
+            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%] sm:hidden lg:block lg:right-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:right-[5%] xl:top-[30%]  2xl:right-[7%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[30%] 2xl:text-base"
             data-aos="fade-up-left"
           >
             <Trans i18nKey="exploreMessage" />
@@ -84,7 +84,7 @@ export default function AboutMe() {
 
 
 
-        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] sm:top-[440px] lg:right-[40px] lg:top-[120px] 2xl:top-[23%] 2xl:right-[7%]">
+        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] sm:top-[440px] lg:right-[40px] lg:top-[120px] xl:right-[5%] 2xl:top-[23%] 2xl:right-[7%]">
           <a href="https://github.com/ZubalYana" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="text-customPurple socialMediaIcon" />
           </a>
