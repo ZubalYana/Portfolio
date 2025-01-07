@@ -56,7 +56,7 @@ export default function AboutMe() {
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative sm:h-[140vh] md:h-[130vh] lg:h-[70vh] 2xl:h-[90vh]">
-        <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
+        <p className="decorationText text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
         </p>

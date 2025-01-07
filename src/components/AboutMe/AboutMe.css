@@ -64,4 +64,10 @@
         top: 310px;
         width: 250px;
     }
+    .decorationText{
+        top: 150px;
+        bottom: auto;
+        font-size: 32px;
+        width: 80%;
+    }
 }
