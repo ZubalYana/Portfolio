@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import myPhoto from '/photo prototype 2.png';
+import myPhoto from '/photo prototype 2.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
