@@ -55,12 +55,12 @@ export default function AboutMe() {
   }
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
-      <section id="about" className="w-full h-[90vh] p-10 flex flex-col items-center relative sm:h-[140vh] md:h-[130vh] lg:h-[70vh] 2xl:h-[90vh]">
+      <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative sm:h-[140vh] md:h-[130vh] lg:h-[70vh] 2xl:h-[90vh]">
         <p className="text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
         </p>
-        <img src={myPhoto} alt="my photo" className="h-[630px] absolute bottom-[0%] sm:h-[450px] sm:bottom-auto sm:top-[10px] lg:h-[470px] lg:top-[30px] 2xl:h-[630px] 2xl:top-auto 2xl:bottom-[0%]" />
+        <img src={myPhoto} alt="my photo" className="mainPhoto h-[630px] absolute bottom-[0%] sm:h-[450px] sm:bottom-auto sm:top-[10px] lg:h-[470px] lg:top-[30px] 2xl:h-[630px] 2xl:top-auto 2xl:bottom-[0%]" />
           <div
             className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%] sm:hidden lg:block lg:left-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:left-[5%] xl:top-[10%] 2xl:left-[8%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[8%] 2xl:text-base"          
             data-aos="fade-down-right"
@@ -77,6 +77,7 @@ export default function AboutMe() {
           <div
             className="textCon w-[570px] h-[320px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light  sm:mt-[420px] md:w-[700px] md:h-[250px] lg:hidden"          
             data-aos="fade-down-right"
+            id='generalTextCon'
           >
             <Trans i18nKey="welcomeMessage" components={{ bold: <strong/> }} />
             <Trans i18nKey="exploreMessage" />

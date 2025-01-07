@@ -13,3 +13,21 @@ ul li a:hover:not(.active) {
     transform: scale(1.2) rotate(360deg);
     opacity: 0.9;
 }
+@media (max-width: 376px) {
+    header{
+        padding: 20px !important;
+    }
+    .logo{
+        width: 30px;
+    }
+    ul{
+        width: 190px !important;
+    }
+    li{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    select{
+        font-size: 14px !important;
+    }
+}
