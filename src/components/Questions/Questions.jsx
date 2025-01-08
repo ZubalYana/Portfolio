@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import './Questions.css';
 export default function Questions() {
   const { i18n } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(null);

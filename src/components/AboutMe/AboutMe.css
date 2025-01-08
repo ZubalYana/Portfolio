@@ -86,4 +86,8 @@
         font-size: 12px !important;
         width: 100%;
     }
+    #faq{
+        margin-top: 25px;
+        min-height: 130vh;
+    }
 }
