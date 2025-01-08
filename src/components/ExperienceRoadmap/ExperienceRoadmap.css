@@ -24,3 +24,32 @@
   opacity: 1;
   transform: scale(1);
 }
+@media (max-width: 376px) {
+  .experienceStep{
+      width: 100% !important;
+      height: 220px !important;
+  }
+  .path_stick.visible{
+    height: 180px !important;
+  }
+  .year{
+    font-size: 14px;
+  }
+  .path{
+    margin-left: 10px !important;
+  }
+  .experience_text{
+    padding-left: 15px;
+  }
+  .experience_title{
+    width: 200px !important;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+  }
+  .experience_description{
+    font-size: 12px;
+    font-weight: 300;
+    width: 230px;
+  }
+}

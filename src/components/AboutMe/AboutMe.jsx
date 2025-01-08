@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SoftSkills from '../SoftSkills/SoftSkills';
 import LanguagesSkills from '../LanguagesSkills/LanguagesSkills';
 import ExperienceRoadmap from '../ExperienceRoadmap/ExperienceRoadmap';
-import EducationCards from '../EducationCards';
+import EducationCards from '../EducationCards/EducationCards';
 import ProjectsCards from '../ProjectsCards';
 import ExploreBtn from '../ExploreBtn/ExploreBtn';
 import Questions from '../Questions/Questions';

@@ -73,4 +73,10 @@
     #skills{
         height: 240vh;
     }
+    .experienceEducationCon{
+        flex-direction: column;
+    }
+    #experience{
+        height: 265vh;
+    }
 }

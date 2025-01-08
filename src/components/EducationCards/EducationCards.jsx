@@ -5,7 +5,7 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
-
+import './EducationCards.css';
 export default function EducationCards() {
   let { t, i18n } = useTranslation();
   let descriptions = [
@@ -45,7 +45,6 @@ export default function EducationCards() {
     }, 1000); 
   };
 
-  // Function to get the appropriate description based on the current language
   const getDescription = (descriptions) => {
     switch (i18n.language) {
       case 'ua':
