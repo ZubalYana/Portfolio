@@ -90,4 +90,44 @@
         margin-top: 25px;
         min-height: 130vh;
     }
+    .footerContent{
+        flex-direction: column;
+    }
+    .lineToAnimate{
+        position: absolute;
+        top: 50px;
+        max-width: 90%;
+    }
+    .footerLeftPart img{
+        width: 120px;
+    }
+    .footerLeftPart p{
+        font-size: 12px;
+        width: 100%;
+    }
+    #footer{
+        height: 100vh;
+    }
+    .socialMediaIcons{
+        width: 210px;
+    }
+    .socialMediaIcons svg{
+        width: 25px;
+    }
+    .footerRightPart{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .footerRightPart h4{
+        font-size: 20px;
+    }
+    .footerRightPart p{
+        font-size: 14px;
+    }
+    .footerListElement{
+        align-items: flex-start;
+    }
+    .copyright{
+        width: 90%;
+    }
 }

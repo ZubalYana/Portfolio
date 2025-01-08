@@ -143,7 +143,7 @@ export default function AboutMe() {
          </h3>
          <Questions />
       </section>
-      <section className='w-full h-[53vh] px-10 py-5 flex flex-col relative'>
+      <section id='footer' className='w-full h-[53vh] px-10 py-5 flex flex-col relative'>
       <h3 className="sectionTitle"><Trans i18nKey="footerSectionTitle" /></h3>
         <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2"></div>
         <div className="footerContent w-full flex justify-between mt-7">
@@ -172,7 +172,7 @@ export default function AboutMe() {
         </div>
           </div>
           <div className="footerRightPart w-[360px] flex justify-between">
-            <div className='flex flex-col items-end'>
+            <div className='flex flex-col items-end footerListElement'>
               <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="navigation"/></h4>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('about')}><Trans i18nKey="navElement1"/></p>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('skills')}><Trans i18nKey="navElement2"/></p>
@@ -180,7 +180,7 @@ export default function AboutMe() {
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('projects')}><Trans i18nKey="navElement4"/></p>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('faq')}><Trans i18nKey="navElement5"/></p>
             </div>
-            <div className='flex flex-col items-end'>
+            <div className='flex flex-col items-end footerListElement'>
               <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="contacts"/></h4>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>+380 97 205 87 86</p>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>zubalana0@gmail.com</p>
