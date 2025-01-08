@@ -79,4 +79,11 @@
     #experience{
         height: 265vh;
     }
+    #projects{
+        height: 285vh;
+    }
+    .sectionSubtitle{
+        font-size: 12px !important;
+        width: 100%;
+    }
 }

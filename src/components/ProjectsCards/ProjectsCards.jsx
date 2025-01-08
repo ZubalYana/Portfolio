@@ -6,7 +6,7 @@ import dental from '/projectsImgs/dental.png';
 import honey from '/projectsImgs/honey.png';
 import yantarne from '/projectsImgs/yantarne.png';
 import yorokobi from '/projectsImgs/yorokobi.png';
-
+import './ProjectsCards.css';
 export default function ProjectsCards() {
   let { i18n } = useTranslation();
   
