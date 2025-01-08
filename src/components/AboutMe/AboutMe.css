@@ -70,4 +70,7 @@
         font-size: 32px;
         width: 80%;
     }
+    #skills{
+        height: 240vh;
+    }
 }

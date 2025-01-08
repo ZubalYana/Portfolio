@@ -1,0 +1,7 @@
+@media (max-width: 376px) {
+    .softSkillsCon{
+        width: 100% !important;
+        height: 650px !important;
+        flex-wrap: wrap !important;
+    }
+}

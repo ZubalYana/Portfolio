@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import './LanguagesSkills.css';
 export default function LanguagesSkills() {
   const { t, i18n } = useTranslation();
   

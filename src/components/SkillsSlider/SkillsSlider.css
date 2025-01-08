@@ -5,3 +5,14 @@
     width: 150px; 
     margin: 0 auto; 
 }
+@media (max-width: 376px) {
+    .slick-next{
+        margin-right: 20px !important;
+    }
+    .slick-prev{
+        margin-left: 20px !important;
+    }
+    .slick-list{
+        padding: 0 15px !important;
+    }
+}

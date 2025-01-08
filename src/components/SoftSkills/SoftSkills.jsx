@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SoftSkillsProgressbar from '../SoftSkillsProgressbar/SoftSkillsProgressbar';
-
+import './SoftSkills.css';
 export default function SoftSkills() {
   const { t, i18n } = useTranslation(); 
 
