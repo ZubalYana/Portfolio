@@ -6,3 +6,11 @@
         margin-top: 30px;
     }
 }
+@media (max-width: 426px) {
+    .languagesContainer{
+        width: 100%;
+        height: 390px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}

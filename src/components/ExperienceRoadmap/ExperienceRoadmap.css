@@ -53,3 +53,32 @@
     width: 230px;
   }
 }
+@media (max-width: 426px) {
+  .experienceStep{
+      width: 100% !important;
+      height: 200px !important;
+  }
+  .path_stick.visible{
+    height: 160px !important;
+  }
+  .year{
+    font-size: 14px;
+  }
+  .path{
+    margin-left: 10px !important;
+  }
+  .experience_text{
+    padding-left: 15px;
+  }
+  .experience_title{
+    width: 200px !important;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+  }
+  .experience_description{
+    font-size: 12px;
+    font-weight: 300;
+    width: 270px;
+  }
+}

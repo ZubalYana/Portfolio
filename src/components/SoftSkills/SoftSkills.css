@@ -5,3 +5,10 @@
         flex-wrap: wrap !important;
     }
 }
+@media (max-width: 426px) {
+    .softSkillsCon{
+        width: 100% !important;
+        height: 650px !important;
+        flex-wrap: wrap !important;
+    }
+}

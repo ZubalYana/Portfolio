@@ -15,3 +15,20 @@
         font-weight: 200;
     }
 }
+@media (max-width: 426px) {
+    .questions{
+        width: 100% !important;
+    }
+    .question{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 15px;
+    }
+    .question h3{
+        width: 85%;
+    }
+    .answer h3{
+        font-size: 12px;
+        font-weight: 200;
+    }
+}

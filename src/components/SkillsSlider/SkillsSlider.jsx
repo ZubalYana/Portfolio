@@ -256,9 +256,15 @@ export default function SkillsSlider() {
             },
           },
           {
+            breakpoint: 426, 
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
             breakpoint: 376, 
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
             },
           },
         ],

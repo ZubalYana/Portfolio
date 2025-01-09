@@ -131,3 +131,101 @@
         width: 90%;
     }
 }
+@media (max-width: 426px) {
+    .sectionTitle {
+        font-size: 24px;
+    }
+    .textCon{
+        display: none;
+    }
+    #generalTextCon{
+        display: block;
+        width: 90%;
+        font-size: 14px;
+        height: auto;
+        bottom: auto;
+        position: absolute;
+        top: 350px;
+    }
+    section{
+        padding: 20px !important;
+    }
+    .mainPhoto{
+        height: 400px;
+        bottom: auto;
+        top: 5px;
+    }
+    .mainSection{
+        min-height: 130vh;
+    }
+    .socialMediaIcons{
+        top: 310px;
+        width: 250px;
+    }
+    .decorationText{
+        top: 150px;
+        bottom: auto;
+        font-size: 32px;
+        width: 80%;
+    }
+    #skills{
+        height: 240vh;
+    }
+    .experienceEducationCon{
+        flex-direction: column;
+    }
+    #experience{
+        height: 265vh;
+    }
+    #projects{
+        height: 285vh;
+    }
+    .sectionSubtitle{
+        font-size: 12px !important;
+        width: 100%;
+    }
+    #faq{
+        margin-top: 25px;
+        min-height: 130vh;
+    }
+    .footerContent{
+        flex-direction: column;
+    }
+    .lineToAnimate{
+        position: absolute;
+        top: 50px;
+        max-width: 90%;
+    }
+    .footerLeftPart img{
+        width: 120px;
+    }
+    .footerLeftPart p{
+        font-size: 12px;
+        width: 100%;
+    }
+    #footer{
+        height: 100vh;
+    }
+    .socialMediaIcons{
+        width: 210px;
+    }
+    .socialMediaIcons svg{
+        width: 25px;
+    }
+    .footerRightPart{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .footerRightPart h4{
+        font-size: 20px;
+    }
+    .footerRightPart p{
+        font-size: 14px;
+    }
+    .footerListElement{
+        align-items: flex-start;
+    }
+    .copyright{
+        width: 90%;
+    }
+}

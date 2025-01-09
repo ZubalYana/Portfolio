@@ -7,3 +7,12 @@
         width: 100% !important;
     }
 }
+@media (max-width: 426px) {
+    .eduCardsContainer{
+        width: 100%;
+        height: 550px;
+    }
+    .eduCard{
+        width: 100% !important;
+    }
+}

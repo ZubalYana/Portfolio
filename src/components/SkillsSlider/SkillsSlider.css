@@ -16,3 +16,14 @@
         padding: 0 15px !important;
     }
 }
+@media (max-width: 426px) {
+    .slick-next{
+        margin-right: 15px !important;
+    }
+    .slick-prev{
+        margin-left: 15px !important;
+    }
+    .slick-list{
+        padding: 0 5px !important;
+    }
+}
