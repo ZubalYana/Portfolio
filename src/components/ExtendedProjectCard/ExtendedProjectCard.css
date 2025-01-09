@@ -6,4 +6,32 @@
     transform: scale(1.2) rotate(10deg);
     opacity: 0.9;
   }
-  
+  @media (max-width: 426px) {
+    .extendedProjectCard{
+      flex-direction: column;
+      height: 600px;
+    }
+    .extendedProjectCard img{
+      width: 100%;
+    }
+    .infoContainer{
+      width: 100%;
+      margin: 20px 0;
+    }
+    .projectNameCon{
+      width: 100% ;
+      display: flex;
+      justify-content: space-between;
+    }
+    .projectLinks a{
+      margin-right: 0px;
+      margin-left: 20px;
+    }
+    .separatingLine{
+      display: none;
+    }
+    .projectDesctiption{
+      width: 100%;
+      max-height: 200px;
+    }
+}

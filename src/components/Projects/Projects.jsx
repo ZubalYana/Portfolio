@@ -8,7 +8,7 @@ import yantarne from '/projectsImgs/yantarne.png';
 import yorokobi from '/projectsImgs/yorokobi.png';
 import daunku from '/projectsImgs/daunku.png';
 import { useTranslation } from 'react-i18next';
-
+import './Projects.css';
 export default function Projects() {
   const { i18n } = useTranslation(); 
   let projects = [
