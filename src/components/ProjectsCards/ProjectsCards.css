@@ -1,26 +1,24 @@
 @media (max-width: 376px) {
     .projectsContainer{
         width: 100%;
-        height: 1800px;
+        height: 1350px !important;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
     .projectCard{
         width: 100% !important;
-        margin-bottom: 30px !important;
     }
 }
 @media (max-width: 426px) {
     .projectsContainer{
         width: 100%;
-        height: 1800px;
+        height: 1350px !important;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
     .projectCard{
         width: 100% !important;
-        margin-bottom: 30px !important;
     }
 }

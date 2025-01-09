@@ -50,7 +50,7 @@
   .experience_description{
     font-size: 12px;
     font-weight: 300;
-    width: 230px;
+    width: 230px !important;
   }
 }
 @media (max-width: 426px) {

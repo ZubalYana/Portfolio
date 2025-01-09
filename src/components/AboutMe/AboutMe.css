@@ -58,7 +58,7 @@
         top: 5px;
     }
     .mainSection{
-        min-height: 130vh;
+        min-height: 740px;
     }
     .socialMediaIcons{
         top: 310px;
@@ -71,16 +71,16 @@
         width: 80%;
     }
     #skills{
-        height: 240vh;
+        height: 2000px;
     }
     .experienceEducationCon{
         flex-direction: column;
     }
     #experience{
-        height: 265vh;
+        height: 1500px;
     }
     #projects{
-        height: 285vh;
+        height: 1550px;
     }
     .sectionSubtitle{
         font-size: 12px !important;
@@ -156,7 +156,7 @@
         top: 5px;
     }
     .mainSection{
-        min-height: 130vh;
+        min-height: 740px;
     }
     .socialMediaIcons{
         top: 310px;
@@ -175,10 +175,10 @@
         flex-direction: column;
     }
     #experience{
-        height: 265vh;
+        height: 1500px;
     }
     #projects{
-        height: 285vh;
+        height: 1550px;
     }
     .sectionSubtitle{
         font-size: 12px !important;
