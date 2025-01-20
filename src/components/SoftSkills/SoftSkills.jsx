@@ -2,6 +2,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SoftSkillsProgressbar from '../SoftSkillsProgressbar/SoftSkillsProgressbar';
 import './SoftSkills.css';
+import continuousLearning from '/softSkillsIcons/continuousLearning.svg';
+import flexebility from '/softSkillsIcons/flexebility.svg';
+import problemSolving from '/softSkillsIcons/problemSolving.svg';
+import publicSpeaking from '/softSkillsIcons/publicSpeaking.svg';
+import teamwork from '/softSkillsIcons/teamwork.svg';
+import timeManagment from '/softSkillsIcons/timeManagment.svg';
+
 export default function SoftSkills() {
   const { t, i18n } = useTranslation(); 
 
