@@ -37,6 +37,7 @@ export default function SkillsSlider() {
           uaDescription: 'Використовується для розширеного стилізування з акцентом на повторне використання та підтримуваність.',
           frDescription: 'Utilisé pour la mise en forme avancée, axé sur la réutilisabilité et la maintenabilité.',
           progress: 80,
+          firstTried: '14.07.2023',
         },
         {
           name: 'JavaScript',
@@ -46,6 +47,7 @@ export default function SkillsSlider() {
           uaDescription: 'Основна мова сценаріїв для динамічного веб-контенту, 2.5 роки досвіду.',
           frDescription: 'Langage de script principal pour le contenu dynamique sur le web, 2.5 ans d\'expérience.',
           progress: 75,
+          firstTried: '05.03.2023',
         },
         {
           name: 'Node.js',
@@ -55,6 +57,7 @@ export default function SkillsSlider() {
           uaDescription: 'Часова середовище JavaScript для створення масштабованих серверних додатків.',
           frDescription: 'Environnement d\'exécution JavaScript pour construire des applications serveur évolutives.',
           progress: 70,
+          firstTried: '20.01.2024',
         },
         {
           name: 'Bootstrap',
@@ -64,6 +67,7 @@ export default function SkillsSlider() {
           uaDescription: 'Фреймворк для створення адаптивних, мобільних веб-дизайнів.',
           frDescription: 'Un framework front-end pour créer des designs web réactifs, d\'abord pour mobiles.',
           progress: 65,
+          firstTried: '27.11.2022',
         },
         {
           name: 'MongoDB',
@@ -73,6 +77,7 @@ export default function SkillsSlider() {
           uaDescription: 'База даних NoSQL для зберігання неструктурованих даних у гнучкому форматі.',
           frDescription: 'Une base de données NoSQL utilisée pour stocker des données non structurées dans un format flexible.',
           progress: 60,
+          firstTried: '13.04.2024',
         },
         {
           name: 'Figma',
@@ -82,6 +87,7 @@ export default function SkillsSlider() {
           uaDescription: 'Інструмент для дизайну, створення інтерфейсів, вайрфреймів та прототипів.',
           frDescription: 'Outil de conception pour créer des interfaces utilisateur, des maquettes et des prototypes.',
           progress: 75,
+          firstTried: '18.12.2022',
         },
         {
           name: 'Multer',
@@ -91,6 +97,7 @@ export default function SkillsSlider() {
           uaDescription: 'Проміжне програмне забезпечення для обробки завантаження файлів у додатках Node.js.',
           frDescription: 'Middleware pour gérer les téléchargements de fichiers dans les applications Node.js.',
           progress: 55,
+          firstTried: '04.12.2023',
         },
         {
           name: 'ClickUp',
@@ -100,6 +107,7 @@ export default function SkillsSlider() {
           uaDescription: 'Платформа для підвищення продуктивності, яка використовується для організації завдань, термінів та співпраці.',
           frDescription: 'Une plateforme de productivité utilisée pour organiser les tâches, les échéances et la collaboration.',
           progress: 70,
+          firstTried: '22.05.2023',
         },
         {
           name: 'Cookies',
@@ -109,6 +117,7 @@ export default function SkillsSlider() {
           uaDescription: 'Використовується для зберігання даних на стороні клієнта для керування сесіями та перевагами.',
           frDescription: 'Utilisé pour stocker des données côté client afin de gérer les sessions et les préférences.',
           progress: 65,
+          firstTried: '02.03.2024',
         },
         {
           name: 'LocalStorage',
@@ -118,6 +127,7 @@ export default function SkillsSlider() {
           uaDescription: 'Механізм зберігання даних у браузері для зберігання інформації локально на пристрої користувача.',
           frDescription: 'Mécanisme de stockage dans le navigateur pour stocker les données localement sur l\'appareil de l\'utilisateur.',
           progress: 60,
+          firstTried: '28.10.2023',
         },
         {
           name: 'Postman',
@@ -127,6 +137,7 @@ export default function SkillsSlider() {
           uaDescription: 'Інструмент для тестування API, надсилання запитів та аналізу відповідей.',
           frDescription: 'Un outil pour tester les API, envoyer des requêtes et analyser les réponses.',
           progress: 85,
+          firstTried: '12.02.2024',
         },
         {
           name: 'Tailwind CSS',
@@ -136,6 +147,8 @@ export default function SkillsSlider() {
           uaDescription: 'CSS-фреймворк, орієнтований на швидку розробку інтерфейсів користувача.',
           frDescription: 'Un framework CSS utilitaire pour un développement rapide d\'interfaces utilisateur.',
           progress: 80,
+          firstTried: '21.08.2024',
+
         },
         {
           name: 'React',
@@ -145,6 +158,7 @@ export default function SkillsSlider() {
           uaDescription: 'Бібліотека JavaScript для створення інтерфейсів користувача, переважно для односторінкових додатків.',
           frDescription: 'Une bibliothèque JavaScript pour créer des interfaces utilisateur, principalement pour des applications à une seule page.',
           progress: 70,
+          firstTried: '21.08.2024',
         },
         {
           name: 'Axios',
@@ -154,6 +168,7 @@ export default function SkillsSlider() {
           uaDescription: 'Клієнт HTTP на основі обіцянок для відправки запитів до API.',
           frDescription: 'Un client HTTP basé sur des promesses pour faire des requêtes aux API.',
           progress: 85,
+          firstTried: '20.01.2024',
         },
         {
           name: 'jQuery',
@@ -163,6 +178,7 @@ export default function SkillsSlider() {
           uaDescription: 'Бібліотека JavaScript для спрощення маніпулювання DOM і обробки подій.',
           frDescription: 'Une bibliothèque JavaScript pour simplifier la manipulation du DOM et la gestion des événements.',
           progress: 70,
+          firstTried: '13.04.2023',
         },
         {
           name: 'Font Awesome',
@@ -172,6 +188,7 @@ export default function SkillsSlider() {
           uaDescription: 'Бібліотека векторних іконок і соціальних логотипів для веб-проєктів.',
           frDescription: 'Une bibliothèque d\'icônes vectorielles et de logos sociaux pour les projets web.',
           progress: 90,
+          firstTried: '12.02.2023',
         },
         {
           name: 'Git/GitHub',
@@ -181,6 +198,7 @@ export default function SkillsSlider() {
           uaDescription: 'Система контролю версій для відстеження змін у коді та співпраці з командами.',
           frDescription: 'Un système de gestion de versions pour suivre les modifications du code et collaborer avec les équipes.',
           progress: 80,
+          firstTried: '12.07.2023',
         },
         {
           name: 'Zustand',
@@ -190,6 +208,7 @@ export default function SkillsSlider() {
           uaDescription: 'Мала, швидка бібліотека для керування станом у React.',
           frDescription: 'Une petite et rapide bibliothèque de gestion d\'état pour React.',
           progress: 30,
+          firstTried: '17.12.2024',
         },
         {
           name: 'Redux',
@@ -199,6 +218,7 @@ export default function SkillsSlider() {
           uaDescription: 'Контейнер передбачуваного стану для JavaScript-додатків, корисний для великих додатків.',
           frDescription: 'Un conteneur d\'état prévisible pour les applications JavaScript, utile pour les applications à grande échelle.',
           progress: 30,
+          firstTried: '08.01.2025',
         },
         {
           name: 'OnRender',
@@ -208,6 +228,7 @@ export default function SkillsSlider() {
           uaDescription: 'Платформа для розгортання та хостингу веб-додатків.',
           frDescription: 'Une plateforme pour déployer et héberger des applications web.',
           progress: 55,
+          firstTried: '08.01.2024',
         },
         {
           name: 'Koyeb',
@@ -217,6 +238,7 @@ export default function SkillsSlider() {
           uaDescription: 'Хмарна платформа для розгортання веб-додатків та API з легкістю.',
           frDescription: 'Plateforme cloud pour déployer des applications web et des API facilement.',
           progress: 50,
+          firstTried: '05.09.2024',
         },
         {
           name: 'Material UI',
@@ -226,6 +248,7 @@ export default function SkillsSlider() {
           uaDescription: 'Популярний фреймворк React для створення сучасних та налаштовуваних інтерфейсів користувача.',
           frDescription: 'Un framework React populaire pour créer des interfaces utilisateur modernes et personnalisables.',
           progress: 75,
+          firstTried: '12.01.2025',
         },
         {
           name: 'Telegram bot API',
@@ -235,6 +258,7 @@ export default function SkillsSlider() {
           uaDescription: 'Інструмент для створення Telegram-ботів для взаємодії з користувачами.',
           frDescription: 'Un instrument pour créer des bots Telegram afin d\'interagir avec les utilisateurs.',
           progress: 80,
+          firstTried: '23.03.2024',
         },
         
     ];
