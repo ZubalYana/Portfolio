@@ -13,20 +13,22 @@ export default function SkillsSlider() {
           name: 'HTML',
           icon: '/technologies/html.svg',
           techType: 'Front-End Development',
-          description: 'Active use in all projects with 2.5 years of experience.',
-          uaDescription: 'Активне використання у всіх проектах вже 2.5 роки.',
-          frDescription: 'Utilisation active dans tous les projets depuis 2.5 ans.',
+          description: 'Standard language used to create and structure content on webpages.',
+          uaDescription: 'Стандартна мова для створення та структурування вмісту на вебсторінках.',
+          frDescription: 'Langage standard utilisé pour créer et structurer le contenu sur les pages web.',
           progress: 90,
+          firstTried: '13.10.2022',
         },
         {
           name: 'CSS',
           icon: '/technologies/css.svg',
           techType: 'Front-End Development',
-          description: 'An enjoyable and well-experienced technology with 2.5 years of experience.',
-          uaDescription: 'Це приємна та добре відома технологія з 2.5 роками досвіду.',
-          frDescription: 'Une technologie agréable et bien maîtrisée avec 2.5 ans d\'expérience.',
+          description: 'Used to style and layout HTML content, controlling its appearance on a webpage.',
+          uaDescription: 'Використовується для стилізації та розташування вмісту HTML, контролюючи його вигляд на вебсторінці.',
+          frDescription: 'Utilisé pour styliser et organiser le contenu HTML, contrôlant son apparence sur une page web.',
           progress: 85,
-        },
+          firstTried: '27.11.2022',
+        },      
         {
           name: 'SCSS',
           icon: '/technologies/scss.svg',
@@ -313,6 +315,7 @@ export default function SkillsSlider() {
               name={selectedSkill.name}
               icon={selectedSkill.icon}
               techType={selectedSkill.techType}
+              firstTried={selectedSkill.firstTried}
               description={getTranslatedDescription(selectedSkill)}
             />
           </div>
