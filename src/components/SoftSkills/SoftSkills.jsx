@@ -17,37 +17,43 @@ export default function SoftSkills() {
       name: 'Time Management',
       uaName: 'Керування часом',
       frName: 'Gestion du temps',
-      progress: 80
+      progress: 80,
+      icon: timeManagment
     },
     {
       name: 'Public Speaking',
       uaName: 'Виступ перед публікою',
       frName: 'Prise de parole en public',
-      progress: 90
+      progress: 90,
+      icon: publicSpeaking
     },
     {
       name: 'Teamwork',
       uaName: 'Командна робота',
       frName: 'Travail en équipe',
-      progress: 70
+      progress: 70,
+      icon: teamwork
     },
     {
       name: 'Problem Solving',
       uaName: 'Розв’язання проблем',
       frName: 'Résolution de problèmes',
-      progress: 65
+      progress: 65,
+      icon: problemSolving
     },
     {
       name: 'Continuous Learning',
       uaName: 'Безперервне навчання',
       frName: 'Apprentissage continu',
-      progress: 87
+      progress: 87,
+      icon: continuousLearning
     },
     {
       name: 'Flexibility',
       uaName: 'Гнучкість',
       frName: 'Flexibilité',
-      progress: 76
+      progress: 76,
+      icon: flexebility
     },
   ];
 
@@ -72,6 +78,7 @@ export default function SoftSkills() {
             key={skill.name}
             name={translatedName}
             progress={skill.progress}
+            icon={skill.icon}
           />
         );
       })}

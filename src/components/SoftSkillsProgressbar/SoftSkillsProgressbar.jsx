@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './SoftSkillsProgressbar.css';
 
-const SoftSkillsProgressbar = ({ name, progress }) => {
+const SoftSkillsProgressbar = ({ name, progress, icon }) => {
   const circleRadius = 50;
   const circleCircumference = 2 * Math.PI * circleRadius;
   const [currentProgress, setCurrentProgress] = useState(0);
@@ -29,7 +29,7 @@ const SoftSkillsProgressbar = ({ name, progress }) => {
     circleCircumference - (currentProgress / 100) * circleCircumference;
 
   return (
-    <div className="circle-progressbar" id='softskills-progressbar' ref={progressRef}>
+    <div className="circle-progressbar" id="softskills-progressbar" ref={progressRef}>
       <svg
         className="circle-progressbar__svg"
         viewBox="0 0 120 120"
@@ -54,8 +54,9 @@ const SoftSkillsProgressbar = ({ name, progress }) => {
         />
       </svg>
       <div className="circle-progressbar__icon">
+        <img src={icon} alt={`${name} icon`} className="icon-image" />
       </div>
-      <h4 className='mt-10 text-base text-customWhite text-center uppercase font-normal'>{name}</h4>
+      <h4 className="mt-10 text-base text-customWhite text-center uppercase font-normal">{name}</h4>
     </div>
   );
 };
@@ -63,6 +64,7 @@ const SoftSkillsProgressbar = ({ name, progress }) => {
 SoftSkillsProgressbar.propTypes = {
   name: PropTypes.string.isRequired,
   progress: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired, 
 };
 
 export default SoftSkillsProgressbar;
