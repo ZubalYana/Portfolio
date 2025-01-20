@@ -171,7 +171,7 @@ export default function AboutMe() {
 
         </div>
           </div>
-          <div className="footerRightPart w-[360px] flex justify-between">
+          <div className="footerRightPart w-[380px] flex justify-between">
             <div className='flex flex-col items-end footerListElement'>
               <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="navigation"/></h4>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('about')}><Trans i18nKey="navElement1"/></p>
@@ -182,8 +182,9 @@ export default function AboutMe() {
             </div>
             <div className='flex flex-col items-end footerListElement'>
               <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="contacts"/></h4>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>+380 97 205 87 86</p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'>zubalana0@gmail.com</p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center'>+380 97 205 87 86 <FontAwesomeIcon icon={faPhone} className="text-customWhite socialMediaIcon ml-2 text-base" />
+              </p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center'>zubalana0@gmail.com <FontAwesomeIcon icon={faEnvelope} className="text-customWhite socialMediaIcon ml-2 text-base" /></p>
             </div>
           </div>
         </div>
