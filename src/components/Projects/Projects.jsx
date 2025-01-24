@@ -7,11 +7,22 @@ import honey from '/projectsImgs/honey.png';
 import yantarne from '/projectsImgs/yantarne.png';
 import yorokobi from '/projectsImgs/yorokobi.png';
 import daunku from '/projectsImgs/daunku.png';
+import rickAndMorty from '/projectsImgs/rick and morty.png';
 import { useTranslation } from 'react-i18next';
 import './Projects.css';
 export default function Projects() {
   const { i18n } = useTranslation(); 
   let projects = [
+    {
+      name: 'Rick & Morty',
+      img: rickAndMorty,
+      description: 'Rick and Morty is a static React application I created as part of a task from an IT company. I\'ve completed this project several times because it\'s a challenging and valuable exercise in working with APIs. Through this project, I learned how to handle APIs using Node.js and React. This version showcases the React implementation of the project. It\'s packed with information about the series, and you can even create your own watchlist! Give it a try!',
+      uaDescription: 'Rick and Morty — це статичний застосунок на React, який я створила в рамках завдання від ІТ-компанії. Я виконувала цей проєкт кілька разів, адже це складна і корисна вправа для роботи з API. Завдяки цьому проєкту я навчилася працювати з API за допомогою Node.js та React. Ця версія демонструє реалізацію проєкту на React. Тут зібрано багато інформації про серіал, персонажів, епізоди, локації, більше того, ви можете створити свій watchlist!',
+      frDescription: 'Rick and Morty est une application statique React que j\'ai créée dans le cadre d\'une tâche donnée par une entreprise informatique. J\'ai réalisé ce projet plusieurs fois, car c\'est un exercice exigeant et précieux pour travailler avec des APIs. Grâce à ce projet, j\'ai appris à manipuler les APIs avec Node.js et React. Cette version présente l\'implémentation du projet en React. Elle regorge d\'informations sur la série, et vous pouvez même créer votre propre liste de visionnage! Essayez-le!',      
+      tags: ['HTML', 'CSS', 'JS', 'React', 'API'],
+      repoLink: 'https://github.com/ZubalYana/Rick-and-Morty-React',
+      projectLink: 'https://rick-and-morty-from-yana.netlify.app/'
+    },
     {
       name: 'SHERET',
       img: sheret,
