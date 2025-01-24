@@ -263,11 +263,33 @@ export default function SkillsSlider() {
         
     ];
     const settings = {
-        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 8,
         slidesToScroll: 3,
+        dots: true,
+        appendDots: dots => (
+          <div
+            style={{
+              color: "#fff",
+              borderRadius: "10px",
+              padding: "0px",
+            }}
+          >
+            <ul style={{width: "100%" }}> {dots} </ul>
+          </div>
+        ),
+        customPaging: i => (
+          <div
+            style={{
+              width: "10px",
+              height: "10px",
+              color: "#fff",
+            }}
+          >
+            <div className="sliderDot"></div>
+          </div>
+        ),
         responsive: [
           {
             breakpoint: 640,

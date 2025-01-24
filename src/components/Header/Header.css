@@ -20,10 +20,10 @@ ul li a:hover:not(.active) {
     .logo{
         width: 30px;
     }
-    ul{
+    header ul{
         width: 190px !important;
     }
-    li{
+    header li{
         font-size: 14px;
         font-weight: 500;
     }
@@ -38,10 +38,10 @@ ul li a:hover:not(.active) {
     .logo{
         width: 30px;
     }
-    ul{
+    header ul{
         width: 190px !important;
     }
-    li{
+    header li{
         font-size: 14px;
         font-weight: 500;
     }
