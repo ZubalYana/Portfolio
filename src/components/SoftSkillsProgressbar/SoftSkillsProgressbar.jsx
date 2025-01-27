@@ -29,7 +29,7 @@ const SoftSkillsProgressbar = ({ name, progress, icon }) => {
     circleCircumference - (currentProgress / 100) * circleCircumference;
 
   return (
-    <div className="circle-progressbar" id="softskills-progressbar" ref={progressRef}>
+    <div className="circle-progressbar softskills-progressbar" id="softskills-progressbar" ref={progressRef}>
       <svg
         className="circle-progressbar__svg"
         viewBox="0 0 120 120"
