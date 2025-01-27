@@ -22,7 +22,7 @@ export default function SkillsInfoWindow({ name, icon, techType, description, fi
   const experience = calculateExperience(firstTried);
 
   return (
-    <div className="w-[400px] h-[250px] rounded-2xl bg-customWhite p-6 fixed bottom-[40px] left-[40px]">
+    <div className="SkillsInfoWindow w-[400px] h-[250px] rounded-2xl bg-customWhite p-6 fixed bottom-[40px] left-[40px]">
       <div className="IconInfoCon flex">
         <img src={icon} alt={`${name} icon`} className="h-[70px] max-w-[100px]" />
         <div className="infoCon ml-4 w-[310px]">
