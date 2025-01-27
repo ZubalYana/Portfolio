@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import myPhoto from '/photo prototype 2.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
@@ -19,9 +19,11 @@ import footerLogo from '/footer logo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useTranslation, Trans } from 'react-i18next';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function AboutMe() {
   const { t, i18n } = useTranslation();
+  const [copiedText, setCopiedText] = useState('');
   useEffect(() => {
     const target = document.querySelector('.lineToAnimate');
     const observer = new IntersectionObserver(
@@ -53,6 +55,10 @@ export default function AboutMe() {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  const handleCopy = (text) => {
+    setCopiedText(text);
+    setTimeout(() => setCopiedText(''), 2000); 
+  };
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative sm:h-[140vh] md:h-[130vh] lg:h-[70vh] 2xl:h-[90vh]">
@@ -176,12 +182,29 @@ export default function AboutMe() {
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('projects')}><Trans i18nKey="navElement4"/></p>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('faq')}><Trans i18nKey="navElement5"/></p>
             </div>
-            <div className='flex flex-col items-end footerListElement'>
-              <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="contacts"/></h4>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center'>+380 97 205 87 86 <FontAwesomeIcon icon={faPhone} className="text-customWhite socialMediaIcon ml-2 text-base" />
-              </p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center'>zubalana0@gmail.com <FontAwesomeIcon icon={faEnvelope} className="text-customWhite socialMediaIcon ml-2 text-base" /></p>
-            </div>
+            <div className="flex flex-col items-end footerListElement">
+      <h4 className="text-2xl font-semibold text-customPurple">
+        <Trans i18nKey="contacts" />
+      </h4>
+      <CopyToClipboard text="+380 97 205 87 86" onCopy={() => handleCopy('+380 97 205 87 86')}>
+        <p className="font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center">
+          +380 97 205 87 86
+          <FontAwesomeIcon icon={faPhone} className="text-customWhite socialMediaIcon ml-2 text-base" />
+          {copiedText === '+380 97 205 87 86' && (
+            <span className="ml-2 text-customWhite text-xs">Copied!</span>
+          )}
+        </p>
+      </CopyToClipboard>
+      <CopyToClipboard text="zubalana0@gmail.com" onCopy={() => handleCopy('zubalana0@gmail.com')}>
+        <p className="font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center">
+          zubalana0@gmail.com
+          <FontAwesomeIcon icon={faEnvelope} className="text-customWhite socialMediaIcon ml-2 text-base" />
+          {copiedText === 'zubalana0@gmail.com' && (
+            <span className="ml-2 text-customWhite text-xs">Copied!</span>
+          )}
+        </p>
+      </CopyToClipboard>
+    </div>
           </div>
         </div>
         <div className="copyright w-[95%] flex justify-center text-customWhite absolute bottom-4 font-light text-xs">

@@ -4,6 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import presentation from '/presentation.svg';
 import './ExtendedProjectCard.css'
+
 export default function ExtendedProjectCard({name, img, description, tags, repoLink, presentationLink, projectLink}) {
   return (
     <div className='extendedProjectCard w-full h-[250px] flex mb-11'>
