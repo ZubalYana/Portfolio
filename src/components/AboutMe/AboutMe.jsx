@@ -155,7 +155,7 @@ export default function AboutMe() {
           <p className='w-[420px] font-light text-base text-customWhite mt-2'>
            <Trans i18nKey="footerSectionSubtitle" />
           </p>
-          <div className="socialMediaIcons w-[280px] flex justify-between items-center mt-6">
+          <div className="socialMediaIcons w-[150px] flex justify-between items-center mt-6">
           <a href="https://github.com/ZubalYana" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="text-customPurple socialMediaIcon" />
           </a>
@@ -165,13 +165,6 @@ export default function AboutMe() {
           <a href="https://t.me/yanavesq" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTelegram} size="2x" className="text-customPurple socialMediaIcon" />
           </a>
-          <a href="mailto:zubalana0@gmail.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faEnvelope} size="2x" className="text-customPurple socialMediaIcon" />
-          </a>
-          <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faPhone} size="2x" className="text-customPurple socialMediaIcon" />
-          </a>
-
         </div>
           </div>
           <div className="footerRightPart w-[380px] flex justify-between">
