@@ -26,7 +26,8 @@ const resources = {
       navElement5: "FAQ",
       copyright: "Copyright © 2024 Yana Zubal. All rights reserved.",
       navigation: "Navigation",
-      contacts: "Contacts"
+      contacts: "Contacts",
+      skillsSectionSubtitle: "Hint: click on the skill to learn more about it",
     },
   },
   ua: {
@@ -52,7 +53,8 @@ const resources = {
       navElement5: "Поширені питання",
       copyright: "Copyright © 2024 Yana Zubal. Всі права захищені.",
       navigation: "Навігація",
-      contacts: "Контакти"
+      contacts: "Контакти",
+      skillsSectionSubtitle: "Підказка: клікніть на скіл, щоб дізнатися про нього більше",
     },
   },
   fr: {
@@ -78,7 +80,8 @@ const resources = {
       navElement5: "Questions fréquentes",
       copyright: "Copyright © 2024 Yana Zubal. Tous droits reservés.",
       navigation: "Navigation",
-      contacts: "Contacts"
+      contacts: "Contacts",
+      skillsSectionSubtitle: "Astuce : cliquez sur la compétence pour en savoir plus à son sujet.",
     },
   },
 };

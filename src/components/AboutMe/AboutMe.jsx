@@ -108,6 +108,9 @@ export default function AboutMe() {
         <h3 className="sectionTitle sm:text-sm">
         <Trans i18nKey="skillsSectionTitle"/>
         </h3>
+        <h3 className="sectionSubtitle text-base font-light text-customWhite mt-3">
+        <Trans i18nKey="skillsSectionSubtitle"/>
+        </h3>
         <SkillsSlider />
         <h3 className="sectionTitle mt-7">
         <Trans i18nKey="softSkillsTitle"/>
