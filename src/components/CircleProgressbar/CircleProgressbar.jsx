@@ -1,18 +1,18 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './CircleProgressbar.css';
 
-const CircleProgressbar = ({ icon, progress }) => {
+const CircleProgressbar = ({ icon }) => {
   const circleRadius = 50;
   const circleCircumference = 2 * Math.PI * circleRadius;
-  const [currentProgress, setCurrentProgress] = useState(0);
+  const [animationComplete, setAnimationComplete] = useState(false);
   const progressRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setCurrentProgress(progress);
+        if (entry.isIntersecting && !animationComplete) {
+          setAnimationComplete(true);
         }
       },
       { threshold: 0.5 }
@@ -23,10 +23,7 @@ const CircleProgressbar = ({ icon, progress }) => {
     return () => {
       if (progressRef.current) observer.unobserve(progressRef.current);
     };
-  }, [progress]);
-
-  const progressOffset =
-    circleCircumference - (currentProgress / 100) * circleCircumference;
+  }, [animationComplete]);
 
   return (
     <div className="circle-progressbar" ref={progressRef}>
@@ -48,7 +45,7 @@ const CircleProgressbar = ({ icon, progress }) => {
           className="circle-progressbar__progress"
           style={{
             strokeDasharray: circleCircumference,
-            strokeDashoffset: progressOffset,
+            strokeDashoffset: animationComplete ? 0 : circleCircumference,
             transition: 'stroke-dashoffset 1.5s ease-out',
           }}
         />
@@ -62,7 +59,6 @@ const CircleProgressbar = ({ icon, progress }) => {
 
 CircleProgressbar.propTypes = {
   icon: PropTypes.string.isRequired,
-  progress: PropTypes.number.isRequired,
 };
 
 export default CircleProgressbar;
