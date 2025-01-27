@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 import presentation from '/presentation.svg';
 import './ExtendedProjectCard.css'
 export default function ExtendedProjectCard({name, img, description, tags, repoLink, presentationLink, projectLink}) {
@@ -47,7 +47,7 @@ export default function ExtendedProjectCard({name, img, description, tags, repoL
                         rel="noopener noreferrer"
                     >
                         <FontAwesomeIcon 
-                            icon={faPaperclip} 
+                            icon={faLink} 
                             size="2x" 
                             className="text-customPurple" 
                         />
