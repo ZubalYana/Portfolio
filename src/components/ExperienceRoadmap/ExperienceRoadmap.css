@@ -24,6 +24,29 @@
   opacity: 1;
   transform: scale(1);
 }
+@media (max-width: 320px) {
+  .path{
+    width: 30px;
+  }
+  .path_circle.visible{
+    width: 30px;
+    height: 30px;
+  }
+  .experience_title{
+    font-size: 16px !important;
+  }
+  .experience_description{
+    font-size: 10px !important;
+    width: 100%;
+  }
+  .experience_text{
+    padding-left: 10px !important;
+    width: max-content !important;
+  }
+  .year{
+    width: auto !important;
+  }
+}
 @media (max-width: 376px) {
   .experienceStep{
       width: 100% !important;
@@ -40,6 +63,7 @@
   }
   .experience_text{
     padding-left: 15px;
+    width: 180px;
   }
   .experience_title{
     width: 200px !important;
@@ -50,7 +74,7 @@
   .experience_description{
     font-size: 12px;
     font-weight: 300;
-    width: 230px !important;
+    width: 100%;
   }
 }
 @media (max-width: 426px) {
@@ -59,7 +83,7 @@
       height: 200px !important;
   }
   .path_stick.visible{
-    height: 160px !important;
+    height: 170px !important;
   }
   .year{
     font-size: 14px;
@@ -69,6 +93,7 @@
   }
   .experience_text{
     padding-left: 15px;
+    width: 180px;
   }
   .experience_title{
     width: 200px !important;
@@ -79,6 +104,6 @@
   .experience_description{
     font-size: 12px;
     font-weight: 300;
-    width: 270px;
+    width: 100%;
   }
 }

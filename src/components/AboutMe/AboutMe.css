@@ -37,6 +37,9 @@
     #about{
         height: 143vh;
     }
+    .sectionTitle{
+        font-size: 20px !important;
+    }
 }
 @media (max-width: 376px) {
     .sectionTitle {
