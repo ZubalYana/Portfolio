@@ -76,8 +76,8 @@ export default function ProjectsCards() {
             className="projectImg w-full h-full object-cover object-center absolute z-0 rounded-2xl"
           />
           <div className="projectImgOverlay w-full h-full bg-cardsOverlay absolute z-10 flex flex-col justify-center items-center rounded-2xl p-7">
-            <div className="projectCard_title font-medium text-4xl text-customWhite text-center">{project.name}</div>
-            <div className="projectCard_subtitle max-h-0 opacity-0 overflow-hidden group-hover:max-h-[100px] group-hover:opacity-100 transition-all duration-700 font-light text-sm text-customWhite text-center mt-3">
+            <div className="projectCard_title font-medium text-3xl text-customWhite text-center">{project.name}</div>
+            <div className="projectCard_subtitle max-h-0 opacity-0 overflow-hidden group-hover:max-h-[100px] group-hover:opacity-100 transition-all duration-700 font-light text-xs text-customWhite text-center mt-3">
               {getDescription(project)}
             </div>
           </div>
