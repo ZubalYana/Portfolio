@@ -37,13 +37,10 @@
     #about{
         height: 143vh;
     }
-    .sectionTitle{
-        font-size: 20px !important;
-    }
 }
 @media (max-width: 376px) {
     .sectionTitle {
-        font-size: 24px;
+        font-size: 20px !important;
     }
     .textCon{
         display: none;
@@ -142,7 +139,7 @@
 @media (max-width: 426px) {
     .sectionTitle {
         font-size: 24px;
-    }
+    } 
     .textCon{
         display: none;
     }
@@ -179,9 +176,6 @@
     #skills{
         height: 240vh;
     }
-    .experienceEducationCon{
-        flex-direction: column;
-    }
     #experience{
         height: 1500px;
     }
@@ -191,7 +185,7 @@
     .sectionSubtitle{
         font-size: 12px !important;
         width: 100%;
-    }
+    } 
     #faq{
         margin-top: 25px;
         min-height: 130vh;
@@ -242,6 +236,9 @@
 }
 @media (max-width: 768px) {
     #skills{
+        height: auto;
+    }
+    #experience{
         height: auto;
     }
 }

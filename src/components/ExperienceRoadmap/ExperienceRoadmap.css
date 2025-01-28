@@ -63,7 +63,7 @@
   }
   .experience_text{
     padding-left: 15px;
-    width: 180px;
+    width: max-content !important;
   }
   .experience_title{
     width: 200px !important;
@@ -80,8 +80,8 @@
 @media (max-width: 426px) {
   .experienceStep{
       width: 100% !important;
-      height: 200px !important;
-  }
+      height: 200px;
+  } 
   .path_stick.visible{
     height: 170px !important;
   }
@@ -93,7 +93,27 @@
   }
   .experience_text{
     padding-left: 15px;
-    width: 180px;
+    width: max-content !important;
+  }
+  .experience_title{
+    width: 200px !important;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+  }
+  .experience_description{
+    font-size: 12px;
+    font-weight: 300;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .experienceEducationCon{
+    flex-direction: column;
+  }
+  .experienceStep{
+      width: 100% !important;
+      height: auto !important;
   }
   .experience_title{
     width: 200px !important;

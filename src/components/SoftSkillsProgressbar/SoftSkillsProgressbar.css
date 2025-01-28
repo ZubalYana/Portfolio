@@ -11,3 +11,8 @@
         font-size: 14px;
     }
 }
+@media screen and (max-width: 376px) {
+    .softSkillsCon h4{
+        font-size: 14px;
+    }
+}
