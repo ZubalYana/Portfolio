@@ -73,9 +73,9 @@ export default function Questions() {
   };
 
   return (
-    <div className="questions w-[90%] mt-5">
+    <div className="questions w-[90%] mt-5 h-auto">
       {questions.map((question, index) => (
-        <div className="questionContainer" key={index}>
+        <div className="questionContainer h-auto" key={index}>
           <div
             className="question w-full h-[70px] rounded-2xl bg-customPurple text-customWhite text-xl font-medium flex items-center justify-between p-6 mb-4 cursor-pointer"
             onClick={() => toggleAnswer(index)}
