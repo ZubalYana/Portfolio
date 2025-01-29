@@ -1,15 +1,18 @@
 .presentationIcon {
     transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .presentationIcon:hover {
+}
+.presentationIcon:hover {
     transform: scale(1.2) rotate(10deg);
     opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .wrap{
+    padding: 20px;
   }
-  @media (max-width: 426px) {
     .extendedProjectCard{
       flex-direction: column;
-      height: 600px;
+      min-height: min-content;
     }
     .extendedProjectCard img{
       width: 100%;
@@ -20,18 +23,22 @@
     }
     .projectNameCon{
       width: 100% ;
-      display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    .projectLinks a{
-      margin-right: 0px;
-      margin-left: 20px;
+    .projectNameCon h3{
+      font-size: 24px;
+      margin-bottom: 7px;
     }
     .separatingLine{
       display: none;
     }
     .projectDesctiption{
       width: 100%;
-      max-height: 200px;
+      min-height: min-content;
+    }
+    .tagsContainer{
+      width: 100%;
+      min-height: min-content;
     }
 }

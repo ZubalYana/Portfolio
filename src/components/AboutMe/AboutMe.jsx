@@ -186,7 +186,7 @@ export default function AboutMe() {
       <h4 className="text-2xl font-semibold text-customPurple">
         <Trans i18nKey="contacts" />
       </h4>
-      <CopyToClipboard text="+380 97 205 87 86" onCopy={() => handleCopy('+380 97 205 87 86')} className='copyContainer'>
+<CopyToClipboard text="+380 97 205 87 86" onCopy={() => handleCopy('+380 97 205 87 86')} className='copyContainer'>
   <div className="font-light text-sm text-customWhite mt-2 cursor-pointer flex flex-col items-start">
     <div className="contactsToCopy flex items-center font-light text-sm text-customWhite mt-2 cursor-pointer">
       +380 97 205 87 86
