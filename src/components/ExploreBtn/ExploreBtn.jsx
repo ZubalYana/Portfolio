@@ -9,6 +9,7 @@ const ExploreBtn = () => {
 
   const handleButtonClick = () => {
     navigate('/projects'); 
+    window.scrollTo(0, 0);
   };
 
   return (
