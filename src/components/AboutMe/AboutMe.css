@@ -103,7 +103,7 @@
         width: 120px;
     }
     .footerLeftPart p{
-        font-size: 12px;
+        font-size: 12px !important;
         width: 100%;
     }
     #footer{
@@ -120,16 +120,16 @@
         width: 100%;
     }
     .footerRightPart h4{
-        font-size: 20px;
+        font-size: 16px !important;
     }
     .footerRightPart p{
-        font-size: 14px;
+        font-size: 12px !important;
     }
     .footerListElement{
         align-items: flex-start;
-    }
-    .copyright{
-        width: 90%;
+    } 
+    #footer .socialMediaIcons{
+        width: 150px;
     }
 }
 @media (max-width: 426px) {
@@ -198,7 +198,7 @@
     }
     .footerLeftPart p{
         font-size: 12px;
-        width: 100%;
+        width: 100% !important;
     }
     #footer{
         height: 100vh;
@@ -211,19 +211,16 @@
     }
     .footerRightPart{
         margin-top: 25px;
-        width: 100%;
+        width: 80%;
     }
     .footerRightPart h4{
         font-size: 20px;
     }
-    .footerRightPart p{
-        font-size: 14px;
+    .contactsToCopy{
+        font-size: 12px !important;
     }
     .footerListElement{
         align-items: flex-start;
-    }
-    .copyright{
-        width: 90%;
     }
     .sectionSubtitle{
         margin-top: 0px;
@@ -235,5 +232,24 @@
     }
     #faq{
         height: auto;
+    }
+    #footer{
+        height: auto !important;
+    }
+    .footerLeftPart img{
+        width: 150px;
+    }
+    .footerLeftPart p{
+        font-size: 14px;
+        width: 350px;
+    }
+    .footerRightPart h4{
+        font-size: 20px;
+    }
+    .contactsToCopy{
+        font-size: 12px !important;
+    }
+    .footerRightPart{
+        width: 280px !important;
     }
 }

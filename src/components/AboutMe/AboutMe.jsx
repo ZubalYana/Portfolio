@@ -155,7 +155,7 @@ export default function AboutMe() {
       <section id='footer' className='w-full h-[53vh] px-10 py-5 flex flex-col relative'>
       <h3 className="sectionTitle"><Trans i18nKey="footerSectionTitle" /></h3>
         <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2"></div>
-        <div className="footerContent w-full flex justify-between mt-7">
+        <div className="footerContent w-full h-auto flex justify-between mt-7">
           <div className="footerLeftPart">
           <img src={footerLogo} alt="futer logo" className='w-[180px]' />
           <p className='w-[420px] font-light text-base text-customWhite mt-2'>
@@ -173,7 +173,7 @@ export default function AboutMe() {
           </a>
         </div>
           </div>
-          <div className="footerRightPart w-[380px] flex justify-between">
+          <div className="footerRightPart w-[380px] h-auto flex justify-between">
             <div className='flex flex-col items-end footerListElement'>
               <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="navigation"/></h4>
               <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('about')}><Trans i18nKey="navElement1"/></p>
@@ -186,28 +186,35 @@ export default function AboutMe() {
       <h4 className="text-2xl font-semibold text-customPurple">
         <Trans i18nKey="contacts" />
       </h4>
-      <CopyToClipboard text="+380 97 205 87 86" onCopy={() => handleCopy('+380 97 205 87 86')}>
-        <p className="font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center">
-          +380 97 205 87 86
-          <FontAwesomeIcon icon={faPhone} className="text-customWhite socialMediaIcon ml-2 text-base" />
-          {copiedText === '+380 97 205 87 86' && (
-            <span className="ml-2 text-customWhite text-xs">Copied!</span>
-          )}
-        </p>
-      </CopyToClipboard>
-      <CopyToClipboard text="zubalana0@gmail.com" onCopy={() => handleCopy('zubalana0@gmail.com')}>
-        <p className="font-light text-sm text-customWhite mt-2 cursor-pointer flex items-center">
-          zubalana0@gmail.com
-          <FontAwesomeIcon icon={faEnvelope} className="text-customWhite socialMediaIcon ml-2 text-base" />
-          {copiedText === 'zubalana0@gmail.com' && (
-            <span className="ml-2 text-customWhite text-xs">Copied!</span>
-          )}
-        </p>
-      </CopyToClipboard>
+      <CopyToClipboard text="+380 97 205 87 86" onCopy={() => handleCopy('+380 97 205 87 86')} className='copyContainer'>
+  <div className="font-light text-sm text-customWhite mt-2 cursor-pointer flex flex-col items-start">
+    <div className="contactsToCopy flex items-center font-light text-sm text-customWhite mt-2 cursor-pointer">
+      +380 97 205 87 86
+      <FontAwesomeIcon icon={faPhone} className="text-customWhite socialMediaIcon ml-2 text-base" />
+    </div>
+    {copiedText === '+380 97 205 87 86' && (
+      <span className="text-customWhite text-xs w-full text-left mt-1">Copied!</span>
+    )}
+  </div>
+</CopyToClipboard>
+
+<CopyToClipboard text="zubalana0@gmail.com" onCopy={() => handleCopy('zubalana0@gmail.com')} className='copyContainer'>
+  <div className="font-light text-sm text-customWhite mt-2 cursor-pointer flex flex-col items-start">
+    <div className="contactsToCopy flex items-center font-light text-sm text-customWhite mt-2 cursor-pointer">
+      zubalana0@gmail.com
+      <FontAwesomeIcon icon={faEnvelope} className="text-customWhite socialMediaIcon ml-2 text-base" />
+    </div>
+    {copiedText === 'zubalana0@gmail.com' && (
+      <span className="text-customWhite text-xs w-full text-left mt-1">Copied!</span>
+    )}
+  </div>
+</CopyToClipboard>
+
+
     </div>
           </div>
         </div>
-        <div className="copyright w-[95%] flex justify-center text-customWhite absolute bottom-4 font-light text-xs">
+        <div className="copyright w-[100%] flex justify-center text-customWhite relative mt-9 font-light text-xs">
           <Trans i18nKey="copyright"/>
         </div>
 
