@@ -21,7 +21,8 @@ export default function Projects() {
       frDescription: 'Rick and Morty est une application statique React que j\'ai créée dans le cadre d\'une tâche donnée par une entreprise informatique. J\'ai réalisé ce projet plusieurs fois, car c\'est un exercice exigeant et précieux pour travailler avec des APIs. Grâce à ce projet, j\'ai appris à manipuler les APIs avec Node.js et React. Cette version présente l\'implémentation du projet en React. Elle regorge d\'informations sur la série, et vous pouvez même créer votre propre liste de visionnage! Essayez-le!',      
       tags: ['HTML', 'CSS', 'JS', 'React', 'API'],
       repoLink: 'https://github.com/ZubalYana/Rick-and-Morty-React',
-      projectLink: 'https://rick-and-morty-from-yana.netlify.app/'
+      projectLink: 'https://rick-and-morty-from-yana.netlify.app/',
+      videoPresentation: 'https://www.loom.com/share/f7e80e4cb1f64895b0b00d4fb00f0254?sid=ef7d83a0-883b-49c5-b413-88a4f19dc4db',
     },
     {
       name: 'SHERET',
@@ -32,7 +33,8 @@ export default function Projects() {
       tags: ['HTML', 'CSS', 'JS', 'Node.js', 'Multer', 'Express', 'Dotenv', 'MongoDB'],
       repoLink: 'https://github.com/ZubalYana/Sheret',
       presentationLink: 'https://www.canva.com/design/DAGWAE-TrWU/PggvoTljiQ5zdtjk9Rzj7A/edit?utm_content=DAGWAE-TrWU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
-      projectLink: 'https://sheret.onrender.com/'
+      projectLink: 'https://sheret.onrender.com/',
+      videoPresentation: 'https://www.loom.com/share/59bcefafe33c443b920553d79a2263ef?sid=22718e14-151f-44a0-923b-139458c7430b',
     },
     {
       name: 'Travelog',
@@ -126,6 +128,7 @@ export default function Projects() {
           repoLink={project.repoLink}
           presentationLink={project.presentationLink}
           projectLink={project.projectLink}
+          videoPresentation={project.videoPresentation}
         />
        ))}
     </div>

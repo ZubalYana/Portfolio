@@ -2,10 +2,11 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import presentation from '/presentation.svg';
 import './ExtendedProjectCard.css'
 
-export default function ExtendedProjectCard({name, img, description, tags, repoLink, presentationLink, projectLink}) {
+export default function ExtendedProjectCard({name, img, description, tags, repoLink, presentationLink, projectLink, videoPresentation}) {
   return (
     <div className='extendedProjectCard w-full h-[250px] flex mb-11'>
         <img src={img} alt="project image" className='w-[40%]' />
@@ -49,6 +50,20 @@ export default function ExtendedProjectCard({name, img, description, tags, repoL
                     >
                         <FontAwesomeIcon 
                             icon={faLink} 
+                            size="2x" 
+                            className="text-customPurple" 
+                        />
+                    </a>
+                )}
+                {videoPresentation && (
+                    <a 
+                        href={videoPresentation} 
+                        className='mr-5 presentationIcon' 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <FontAwesomeIcon 
+                            icon={faCirclePlay} 
                             size="2x" 
                             className="text-customPurple" 
                         />
