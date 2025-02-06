@@ -243,6 +243,25 @@ export default function SkillsSlider() {
           frDescription: 'Un ensemble d\'outils pour concevoir, créer, documenter et tester des API RESTful à l\'aide de la spécification OpenAPI.',
           firstTried: '26.01.2025',
         },
+        {
+          name: 'React Query',
+          icon: '/technologies/react-query.png',
+          techType: 'State Management & Data Fetching',
+          description: 'A powerful data-fetching and state management library for React, designed to handle caching, background updates, and server synchronization.',
+          uaDescription: 'Потужна бібліотека для отримання даних і управління станом у React, що забезпечує кешування, фонові оновлення та синхронізацію із сервером.',
+          frDescription: 'Une bibliothèque puissante de récupération de données et de gestion d\'état pour React, conçue pour gérer la mise en cache, les mises à jour en arrière-plan et la synchronisation avec le serveur.',
+          firstTried: '01.02.2025',
+        },  
+        {
+          name: 'Passport JS',
+          icon: '/technologies/passport js.png',
+          techType: 'Authentication',
+          description: 'A flexible authentication middleware for Node.js, supporting various strategies like OAuth, JWT, and local authentication.',
+          uaDescription: 'Гнучке проміжне програмне забезпечення для автентифікації в Node.js, яке підтримує різні стратегії, такі як OAuth, JWT та локальна автентифікація.',
+          frDescription: 'Un middleware d\'authentification flexible pour Node.js, prenant en charge diverses stratégies comme OAuth, JWT et l\'authentification locale.',
+          firstTried: '22.02.2024',
+        }
+        
         
         
     ];
