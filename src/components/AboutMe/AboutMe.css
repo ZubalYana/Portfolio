@@ -34,9 +34,9 @@
     opacity: 0.9;
 }
 @media (max-width: 321px) {
-    #about{
+    /* #about{
         height: 143vh;
-    }
+    } */
 }
 @media (max-width: 376px) {
     .sectionTitle {
@@ -62,9 +62,9 @@
         bottom: auto;
         top: 5px;
     }
-    .mainSection{
+    /* .mainSection{
         min-height: 740px;
-    }
+    } */
     .socialMediaIcons{
         top: 310px;
         width: 250px;
@@ -156,9 +156,9 @@
         bottom: auto;
         top: 5px;
     }
-    .mainSection{
+    /* .mainSection{
         min-height: 740px;
-    }
+    } */
     .socialMediaIcons{
         top: 310px;
         width: 250px;

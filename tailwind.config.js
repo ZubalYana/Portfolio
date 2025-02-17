@@ -13,6 +13,9 @@ export default {
         'customWhite': '#F3EFF5',
         'cardsOverlay': 'rgba(147, 31, 255, 0.8)'
       },
+      screens: {
+        'xs': '320px',
+      }
     },
   },
   plugins: [],
