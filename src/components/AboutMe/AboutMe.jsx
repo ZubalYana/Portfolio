@@ -61,7 +61,7 @@ export default function AboutMe() {
   };
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
-      <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative xs:h-[120vh] lg:h-[90vh]">
+      <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative">
         <p className="decorationText text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
@@ -217,7 +217,6 @@ export default function AboutMe() {
         <div className="copyright w-[100%] flex justify-center text-customWhite relative mt-9 font-light text-xs">
           <Trans i18nKey="copyright"/>
         </div>
-
       </section>
     </div>
   );
