@@ -61,28 +61,28 @@ export default function AboutMe() {
   };
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
-      <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative">
-        <p className="decorationText text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
+      <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative xs:p-0 xs:h-auto">
+        <p className="decorationText text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between xs:text-4xl xs:w-[100%] xs:top-[150px] sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
         </p>
-        <img src={myPhoto} alt="my photo" className="mainPhoto h-[630px] absolute bottom-[0%] sm:h-[450px] sm:bottom-auto sm:top-[10px] lg:h-[470px] lg:top-[30px] 2xl:h-[630px] 2xl:top-auto 2xl:bottom-[0%]" />
+        <img src={myPhoto} alt="my photo" className="mainPhoto h-[630px] absolute bottom-[0%] xs:h-[400px] xs:w-auto xs:top-[-20px] sm:h-[450px] sm:bottom-auto sm:top-[10px] lg:h-[470px] lg:top-[30px] 2xl:h-[630px] 2xl:top-auto 2xl:bottom-[0%]" />
           <div
-            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%] sm:hidden lg:block lg:left-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:left-[5%] xl:top-[10%] 2xl:left-[8%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[8%] 2xl:text-base"          
+            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%] xs:hidden lg:block lg:left-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:left-[5%] xl:top-[10%] 2xl:left-[8%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[8%] 2xl:text-base"          
             data-aos="fade-down-right"
           >
             <Trans i18nKey="welcomeMessage" components={{ bold: <strong/> }} />
           </div>
           <div
-            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%] sm:hidden lg:block lg:right-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:right-[5%] xl:top-[30%]  2xl:right-[7%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[30%] 2xl:text-base"
+            className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[30%] right-[7%] xs:hidden lg:block lg:right-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:right-[5%] xl:top-[30%]  2xl:right-[7%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[30%] 2xl:text-base"
             data-aos="fade-up-left"
           >
             <Trans i18nKey="exploreMessage" />
           </div>
 
           <div
-            className="textCon w-[570px] h-[320px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light  sm:mt-[420px] md:w-[700px] md:h-[250px] lg:hidden"          
-            data-aos="fade-down-right"
+            className="textCon w-[570px] h-[320px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light xs:w-full xs:text-xs xs:mt-[300px] sm:mt-[420px] md:w-[700px] md:h-[250px] lg:hidden"          
+            data-aos="md:fade-down-right"
             id='generalTextCon'
           >
             <Trans i18nKey="welcomeMessage" components={{ bold: <strong/> }} />
@@ -91,7 +91,7 @@ export default function AboutMe() {
 
 
 
-        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] sm:top-[420px] lg:right-[40px] lg:top-[120px] xl:right-[5%] 2xl:top-[23%] 2xl:right-[7%]">
+        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] xs:top-[250px] xs:left-[0px] sm:top-[420px] lg:right-[7%] lg:top-[23%] lg:left-auto">
           <a href="https://github.com/ZubalYana" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="text-customPurple socialMediaIcon" />
           </a>
@@ -110,7 +110,7 @@ export default function AboutMe() {
 
         </div>
       </section>
-      <section id="skills" className="w-full h-[100vh] px-10 py-5 sm:h-[165vh] lg:h-[100vh]">
+      <section id="skills" className="w-full h-[100vh] px-10 py-5 sm:h-[165vh] lg:h-[100vh] xs:hidden">
         <h3 className="sectionTitle sm:text-sm">
         <Trans i18nKey="skillsSectionTitle"/>
         </h3>
@@ -124,7 +124,7 @@ export default function AboutMe() {
         <SoftSkills />
         <LanguagesSkills />
       </section>
-      <section id='experience' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
+      <section id='experience' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center xs:hidden'>
         <h3 className="sectionTitle">
         <Trans i18nKey="experienceSectionTitle"/>
         </h3>
@@ -133,7 +133,7 @@ export default function AboutMe() {
         <EducationCards />
         </div>
       </section>
-      <section id='projects' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center'>
+      <section id='projects' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center xs:hidden'>
         <h3 className="sectionTitle">
           <Trans i18nKey="projectsSectionTitle"/>
         </h3>
@@ -143,7 +143,7 @@ export default function AboutMe() {
          <ProjectsCards />
          <ExploreBtn />
       </section>
-      <section id='faq' className='w-full h-[100vh] px-10 py-10 flex flex-col items-center'>
+      <section id='faq' className='w-full h-[100vh] px-10 py-10 flex flex-col items-center xs:hidden'>
          <h3 className="sectionTitle">
          <Trans i18nKey="faqSectionTitle"/>
          </h3>
@@ -152,7 +152,7 @@ export default function AboutMe() {
          </h3>
          <Questions />
       </section>
-      <section id='footer' className='w-full h-[53vh] px-10 py-5 flex flex-col relative'>
+      <section id='footer' className='w-full h-[53vh] px-10 py-5 flex flex-col relative xs:hidden'>
       <h3 className="sectionTitle"><Trans i18nKey="footerSectionTitle" /></h3>
         <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2"></div>
         <div className="footerContent w-full h-auto flex justify-between mt-7">
