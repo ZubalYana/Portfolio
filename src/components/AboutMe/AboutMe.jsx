@@ -62,11 +62,11 @@ export default function AboutMe() {
   return (
     <div className="wrap w-full min-h-screen bg-customBlack">
       <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative xs:p-0 xs:h-auto lg:h-[90vh]">
-        <p className="decorationText text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between xs:text-4xl xs:w-[100%] xs:top-[150px] sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
+        <p className="decorationText text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between xs:text-4xl xs:w-[100%] xs:top-[150px] 2xs:w-[90%] sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
           <span className="backgroundText">Yana</span>
           <span className="backgroundText">Zubal</span>
         </p>
-        <img src={myPhoto} alt="my photo" className="mainPhoto h-[630px] absolute bottom-[0%] xs:h-[400px] xs:w-auto xs:top-[-20px] sm:h-[450px] sm:bottom-auto sm:top-[10px] lg:h-[470px] lg:top-[30px] 2xl:h-[630px] 2xl:top-auto 2xl:bottom-[0%]" />
+        <img src={myPhoto} alt="my photo" className="mainPhoto h-[630px] absolute bottom-[0%] xs:h-[400px] xs:w-auto xs:top-[-20px] sm:h-[450px] lg:h-[470px] lg:top-[30px] 2xl:h-[630px] 2xl:top-auto 2xl:bottom-[0%]" />
           <div
             className="textCon w-[570px] h-[180px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light absolute top-[8%] left-[8%] xs:hidden lg:block lg:left-[40px] lg:w-[400px] lg:h-[190px] lg:text-sm xl:w-[500px] xl:h-[150px] xl:left-[5%] xl:top-[10%] 2xl:left-[8%] 2xl:w-[570px] 2xl:h-[180px] 2xl:top-[8%] 2xl:text-base"          
             data-aos="fade-down-right"
@@ -81,7 +81,7 @@ export default function AboutMe() {
           </div>
 
           <div
-            className="textCon w-[570px] h-[320px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light xs:w-full xs:text-xs xs:mt-[300px] xs:h-min sm:mt-[420px] md:w-[700px] md:h-[250px] lg:hidden"          
+            className="textCon w-[570px] h-[320px] rounded-2xl bg-customPurple/40 backdrop-blur-lg p-4 text-customWhite font-light xs:w-full xs:text-xs xs:mt-[300px] xs:h-min sm:mt-[420px] lg:hidden"          
             data-aos="md:fade-down-right"
             id='generalTextCon'
           >
@@ -91,7 +91,7 @@ export default function AboutMe() {
 
 
 
-        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] xs:top-[250px] xs:left-[0px] sm:top-[420px] lg:right-[7%] lg:top-[23%] lg:left-auto">
+        <div className="socialMediaIcons w-[280px] flex justify-between items-center absolute right-[7%] top-[23%] xs:top-[250px] xs:right-[0px] md:top-[380px] md:right-[10px] lg:right-[7%] lg:top-[23%] lg:left-auto">
           <a href="https://github.com/ZubalYana" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className="text-customPurple socialMediaIcon" />
           </a>

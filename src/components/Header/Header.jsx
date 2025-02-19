@@ -23,7 +23,7 @@ export default function Header({ openSettings }) {
   return (
     <header className="w-full h-[80px] flex justify-between items-center p-10 bg-customBlack xs:p-5 lg:p-10">
       <img src={logo} alt="logo" className="w-[36px] logo xs:w-7 lg:w-[36px]" />
-      <ul className="headerNav w-[300px] flex justify-between items-center text-customWhite text-base font-medium lg:w-[300px] lg:text-base lg:font-medium xs:w-[150px] xs:text-xs xs:font-normal">
+      <ul className="headerNav w-[300px] flex justify-between items-center text-customWhite text-base font-medium lg:w-[300px] lg:text-base lg:font-medium xs:w-[150px] xs:text-xs xs:font-normal 2xs:w-[170px] 3xs:text-sm 3xs:w-[200px]">
         <li>
           <NavLink
             to="/about"
@@ -43,7 +43,7 @@ export default function Header({ openSettings }) {
       </ul>
       <select
         id="language"
-        className="font-medium text-xl bg-customBlack text-customWhite outline-none xs:text-sm lg:font-medium lg:text-xl"
+        className="font-medium text-xl bg-customBlack text-customWhite outline-none xs:text-sm 3xs:text-base lg:font-medium lg:text-xl"
         onChange={changeLanguage}
         defaultValue={i18n.language}
       >
