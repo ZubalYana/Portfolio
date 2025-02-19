@@ -15,7 +15,7 @@
     z-index: 1001;
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .SkillsInfoWindow{
     width: 70%;
     height: 210px;
@@ -104,4 +104,4 @@
   .SkillsInfoWindow p{
     font-size: 14px;
   }
-}
+} */

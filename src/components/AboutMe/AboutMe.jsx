@@ -110,15 +110,15 @@ export default function AboutMe() {
 
         </div>
       </section>
-      <section id="skills" className="w-full h-[100vh] px-10 py-5 sm:h-[165vh] lg:h-[100vh] xs:hidden">
-        <h3 className="sectionTitle sm:text-sm">
+      <section id="skills" className="w-full h-[100vh] px-10 py-5 xs:h-auto xs:px-0 xs:py-9 lg:h-[100vh] lg:px-10">
+        <h3 className="sectionTitle xs:text-xl lg:text-3xl">
         <Trans i18nKey="skillsSectionTitle"/>
         </h3>
-        <h3 className="sectionSubtitle text-base font-light text-customWhite mt-3">
+        <h3 className="sectionSubtitle text-base font-light text-customWhite mt-1 xs:text-xs xs:mt-1 lg:text-base lg:mt-3">
         <Trans i18nKey="skillsSectionSubtitle"/>
         </h3>
         <SkillsSlider />
-        <h3 className="sectionTitle mt-7">
+        <h3 className="sectionTitle mt-7 xs:text-xl lg:text-3xl">
         <Trans i18nKey="softSkillsTitle"/>
         </h3>
         <SoftSkills />
