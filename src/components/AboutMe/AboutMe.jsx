@@ -60,7 +60,7 @@ export default function AboutMe() {
     setTimeout(() => setCopiedText(''), 2000); 
   };
   return (
-    <div className="wrap w-full min-h-screen bg-customBlack">
+    <div className="wrap w-full min-h-screen bg-customBlack overflow-hidden">
       <section id="about" className="mainSection w-full h-[90vh] p-10 flex flex-col items-center relative xs:p-0 xs:h-auto lg:h-[90vh]">
         <p className="decorationText text-customPurple text-9xl absolute bottom-[10%] w-[900px] flex justify-between xs:text-4xl xs:w-[100%] xs:top-[150px] 2xs:w-[90%] sm:text-7xl sm:w-[550px] sm:bottom-auto sm:top-[200px] lg:top-auto lg:bottom-[50px] xl:bottom-[70px] 2xl:text-9xl 2xl:w-[900px] 2xl:top-auto 2xl:bottom-[10%]">
           <span className="backgroundText">Yana</span>
@@ -124,8 +124,8 @@ export default function AboutMe() {
         <SoftSkills />
         <LanguagesSkills />
       </section>
-      <section id='experience' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center xs:hidden'>
-        <h3 className="sectionTitle">
+      <section id='experience' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center xs:h-auto xs:px-0 xs:py-9 lg:h-[100vh] lg:px-10'>
+        <h3 className="sectionTitle xs:text-xl lg:text-3xl">
         <Trans i18nKey="experienceSectionTitle"/>
         </h3>
         <div className="experienceEducationCon w-full flex justify-between">
