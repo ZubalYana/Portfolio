@@ -143,11 +143,11 @@ export default function AboutMe() {
          <ProjectsCards />
          <ExploreBtn />
       </section>
-      <section id='faq' className='w-full h-[100vh] px-10 py-10 flex flex-col items-center xs:hidden'>
-         <h3 className="sectionTitle">
+      <section id='faq' className='w-full h-[100vh] px-10 py-10 flex flex-col items-center xs:h-auto xs:px-0 xs:py-9 lg:h-[100vh] lg:px-10'>
+         <h3 className="sectionTitle xs:text-xl lg:text-3xl">
          <Trans i18nKey="faqSectionTitle"/>
          </h3>
-         <h3 className="sectionSubtitle text-base font-light text-customWhite w-[700px] text-center">
+         <h3 className="sectionSubtitle text-base font-light text-customWhite w-[700px] text-center xs:w-full xs:text-xs xs:mt-1 lg:text-base lg:mt-3 lg:w-[700px]">
          <Trans i18nKey="faqSectionSubtitle"/>
          </h3>
          <Questions />
