@@ -152,13 +152,13 @@ export default function AboutMe() {
          </h3>
          <Questions />
       </section>
-      <section id='footer' className='w-full h-[53vh] px-10 py-5 flex flex-col relative xs:hidden'>
-      <h3 className="sectionTitle"><Trans i18nKey="footerSectionTitle" /></h3>
+      <section id='footer' className='w-full h-[53vh] px-10 py-5 flex flex-col relative  xs:h-auto xs:px-0 xs:py-9 lg:h-[100vh] lg:px-10'>
+      <h3 className="sectionTitle xs:text-xl lg:text-3xl"><Trans i18nKey="footerSectionTitle" /></h3>
         <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2"></div>
-        <div className="footerContent w-full h-auto flex justify-between mt-7">
+        <div className="footerContent w-full h-auto flex justify-between mt-7 xs:flex-col lg:flex-row">
           <div className="footerLeftPart">
-          <img src={footerLogo} alt="futer logo" className='w-[180px]' />
-          <p className='w-[420px] font-light text-base text-customWhite mt-2'>
+          <img src={footerLogo} alt="futer logo" className='w-[180px] xs:w-[130px] lg:w-[180px]' />
+          <p className='w-[420px] font-light text-base text-customWhite mt-2 xs:w-full xs:text-sm lg:w-[420px] lg:text-base'>
            <Trans i18nKey="footerSectionSubtitle" />
           </p>
           <div className="socialMediaIcons w-[150px] flex justify-between items-center mt-6">
@@ -173,22 +173,22 @@ export default function AboutMe() {
           </a>
         </div>
           </div>
-          <div className="footerRightPart w-[380px] h-auto flex justify-between">
-            <div className='flex flex-col items-end footerListElement'>
-              <h4 className='text-2xl font-semibold text-customPurple'><Trans i18nKey="navigation"/></h4>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('about')}><Trans i18nKey="navElement1"/></p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer' onClick={() => scrollToSection('skills')}><Trans i18nKey="navElement2"/></p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('experience')}><Trans i18nKey="navElement3"/></p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('projects')}><Trans i18nKey="navElement4"/></p>
-              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer'  onClick={() => scrollToSection('faq')}><Trans i18nKey="navElement5"/></p>
+          <div className="footerRightPart w-[380px] h-auto flex justify-between xs:w-full xs:mt-6 xs:justify-start lg:w-[380px] lg:mt-0 lg:justify-between">
+            <div className='flex flex-col items-end footerListElement xs:mr-6 lg:mr-0 xs:items-start lg:items-end'>
+              <h4 className='text-2xl font-semibold text-customPurple xs:text-lg lg:text-2xl'><Trans i18nKey="navigation"/></h4>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer xs:text-xs lg:text-sm' onClick={() => scrollToSection('about')}><Trans i18nKey="navElement1"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer xs:text-xs lg:text-sm' onClick={() => scrollToSection('skills')}><Trans i18nKey="navElement2"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer xs:text-xs lg:text-sm'  onClick={() => scrollToSection('experience')}><Trans i18nKey="navElement3"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer xs:text-xs lg:text-sm'  onClick={() => scrollToSection('projects')}><Trans i18nKey="navElement4"/></p>
+              <p className='font-light text-sm text-customWhite mt-2 cursor-pointer xs:text-xs lg:text-sm'  onClick={() => scrollToSection('faq')}><Trans i18nKey="navElement5"/></p>
             </div>
-            <div className="flex flex-col items-end footerListElement">
-      <h4 className="text-2xl font-semibold text-customPurple">
+            <div className="flex flex-col items-end footerListElement xs:items-start lg:items-end">
+      <h4 className="text-2xl font-semibold text-customPurple xs:text-lg lg:text-2xl">
         <Trans i18nKey="contacts" />
       </h4>
 <CopyToClipboard text="+380 97 205 87 86" onCopy={() => handleCopy('+380 97 205 87 86')} className='copyContainer'>
   <div className="font-light text-sm text-customWhite mt-2 cursor-pointer flex flex-col items-start">
-    <div className="contactsToCopy flex items-center font-light text-sm text-customWhite mt-2 cursor-pointer">
+    <div className="contactsToCopy flex items-center font-light text-sm text-customWhite mt-2 cursor-pointer xs:text-xs lg:text-sm">
       +380 97 205 87 86
       <FontAwesomeIcon icon={faPhone} className="text-customWhite socialMediaIcon ml-2 text-base" />
     </div>
@@ -200,7 +200,7 @@ export default function AboutMe() {
 
 <CopyToClipboard text="zubalana0@gmail.com" onCopy={() => handleCopy('zubalana0@gmail.com')} className='copyContainer'>
   <div className="font-light text-sm text-customWhite mt-2 cursor-pointer flex flex-col items-start">
-    <div className="contactsToCopy flex items-center font-light text-sm text-customWhite mt-2 cursor-pointer">
+    <div className="contactsToCopy flex items-center font-light text-sm text-customWhite mt-2 cursor-pointer xs:text-xs lg:text-sm">
       zubalana0@gmail.com
       <FontAwesomeIcon icon={faEnvelope} className="text-customWhite socialMediaIcon ml-2 text-base" />
     </div>
@@ -214,7 +214,7 @@ export default function AboutMe() {
     </div>
           </div>
         </div>
-        <div className="copyright w-[100%] flex justify-center text-customWhite relative mt-9 font-light text-xs">
+        <div className="copyright w-[100%] flex justify-center text-customWhite relative mt-9 font-light text-xs xs:mt-14 lg:mt-9">
           <Trans i18nKey="copyright"/>
         </div>
       </section>
