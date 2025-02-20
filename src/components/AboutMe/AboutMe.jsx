@@ -133,11 +133,11 @@ export default function AboutMe() {
         <EducationCards />
         </div>
       </section>
-      <section id='projects' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center xs:hidden'>
-        <h3 className="sectionTitle">
+      <section id='projects' className='w-full h-[100vh] px-10 py-5 flex flex-col items-center xs:h-auto xs:px-0 xs:py-9 lg:h-[100vh] lg:px-10'>
+        <h3 className="sectionTitle xs:text-xl lg:text-3xl">
           <Trans i18nKey="projectsSectionTitle"/>
         </h3>
-        <h3 className="sectionSubtitle text-base font-light text-customWhite text-center">
+        <h3 className="sectionSubtitle text-base font-light text-customWhite text-center xs:text-xs xs:mt-1 lg:text-base lg:mt-3">
           <Trans i18nKey="projectsSectionSubtitle"/>
         </h3>
          <ProjectsCards />
