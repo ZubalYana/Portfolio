@@ -152,9 +152,9 @@ export default function AboutMe() {
          </h3>
          <Questions />
       </section>
-      <section id='footer' className='w-full h-[53vh] px-10 py-5 flex flex-col relative  xs:h-auto xs:px-0 xs:py-9 lg:h-[53vh] lg:px-10'>
+      <section id='footer' className='w-full h-[55vh] px-10 py-5 flex flex-col relative  xs:h-auto xs:px-0 xs:py-9 lg:h-[57vh] lg:px-10'>
       <h3 className="sectionTitle xs:text-xl lg:text-3xl"><Trans i18nKey="footerSectionTitle" /></h3>
-        <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2"></div>
+        <div className="lineToAnimate w-full h-[1px] rounded-sm bg-customPurple mt-2 lg:h-[1.5px]"></div>
         <div className="footerContent w-full h-auto flex justify-between mt-7 xs:flex-col lg:flex-row">
           <div className="footerLeftPart">
           <img src={footerLogo} alt="futer logo" className='w-[180px] xs:w-[130px] lg:w-[180px]' />
