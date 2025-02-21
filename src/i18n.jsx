@@ -28,6 +28,11 @@ const resources = {
       navigation: "Navigation",
       contacts: "Contacts",
       skillsSectionSubtitle: "Hint: click on the skill to learn more about it",
+      firstTried: "First tried",
+      experience: "Experience",
+      years: "years",
+      months: "months",
+      days: "days",
     },
   },
   ua: {
@@ -55,6 +60,12 @@ const resources = {
       navigation: "Навігація",
       contacts: "Контакти",
       skillsSectionSubtitle: "Підказка: клікніть на скіл, щоб дізнатися про нього більше",
+      firstTried: "Вперше спробувала",
+      experience: "Досвід",
+      years: "роки",
+      months: "місяці",
+      days: "дні"
+      
     },
   },
   fr: {
@@ -82,6 +93,12 @@ const resources = {
       navigation: "Navigation",
       contacts: "Contacts",
       skillsSectionSubtitle: "Astuce : cliquez sur la compétence pour en savoir plus à son sujet.",
+      firstTried: "Première tentative",
+      experience: "Expérience",
+      years: "ans",
+      months: "mois",
+      days: "jours"
+      
     },
   },
 };

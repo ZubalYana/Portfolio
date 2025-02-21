@@ -1,7 +1,9 @@
 import React from 'react';
 import './SkillsInfoWindow.css';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function SkillsInfoWindow({ name, icon, techType, description, firstTried }) {
+  const { t, i18n } = useTranslation();
   const calculateExperience = (startDate) => {
     const start = new Date(startDate.split('.').reverse().join('-'));
     const now = new Date();
@@ -31,12 +33,12 @@ export default function SkillsInfoWindow({ name, icon, techType, description, fi
         </div>
       </div>
       <p className="text-customBlack font-light mt-2 xs:text-sm lg:text-base">
-        First tried: <span className="font-medium">{firstTried}</span>
+        <Trans i18nKey="firstTried" />: <span className="font-medium">{firstTried}</span>
       </p>
       <p className="text-customBlack font-light mt-1 xs:text-sm lg:text-base">
-        Experience: 
+        <Trans i18nKey="experience" />:  
         <span className="font-medium ml-1">
-          {experience.years} years, {experience.months} months, {experience.days} days
+          {experience.years} <Trans i18nKey="years" />, {experience.months} <Trans i18nKey="months" />, {experience.days} <Trans i18nKey="days" />
         </span>
       </p>
       <p className="text-customBlack font-light mt-2 xs:text-xs lg:text-base">{description}</p>
