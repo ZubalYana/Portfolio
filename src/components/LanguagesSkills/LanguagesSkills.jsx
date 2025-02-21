@@ -7,6 +7,8 @@ export default function LanguagesSkills() {
   const languages = [
     {
       name: 'Ukrainian',
+      uaName: 'Українська',
+      frName: 'Ukrainien',
       progress: 95,
       description: 'Native language',
       uaDescription: 'Рідна мова',
@@ -14,6 +16,8 @@ export default function LanguagesSkills() {
     },
     {
       name: 'English',
+      uaName: 'Англійська',
+      frName: 'Anglais',
       progress: 70,
       description: 'B2 level',
       uaDescription: 'Рівень B2',
@@ -21,6 +25,8 @@ export default function LanguagesSkills() {
     },
     {
       name: 'French',
+      uaName: 'Французька',
+      frName: 'Français',
       progress: 20,
       description: 'A2 level',
       uaDescription: 'Рівень A2',
@@ -28,6 +34,8 @@ export default function LanguagesSkills() {
     },
     {
       name: 'Japanese',
+      uaName: 'Японська',
+      frName: 'Japonais',
       progress: 15,
       description: 'JLPT N5',
       uaDescription: 'JLPT N5',
@@ -75,8 +83,9 @@ export default function LanguagesSkills() {
             ></div>
           </div>
           <p className='languageName text-customWhite text-2xl font-medium mt-2'>
-            {language.name}
+            {language[`${i18n.language}Name`] || language.name}
           </p>
+
           <p className='languageDescription text-customWhite text-base font-light'>
             {t(language[`${i18n.language}Description`] || language.description)}
           </p>
