@@ -215,7 +215,9 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="copyright w-[100%] flex justify-center text-customWhite relative mt-9 font-light text-xs xs:mt-14 lg:mt-9">
-          <Trans i18nKey="copyright"/>
+          <Trans i18nKey="copyright1"/>
+          <div className='mx-1'>{new Date().getFullYear()}</div>
+          <Trans i18nKey="copyright2"/>
         </div>
       </section>
     </div>
