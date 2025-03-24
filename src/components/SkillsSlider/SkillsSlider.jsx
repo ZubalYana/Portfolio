@@ -259,7 +259,34 @@ export default function SkillsSlider() {
           description: 'A flexible authentication middleware for Node.js, supporting various strategies like OAuth, JWT, and local authentication.',
           uaDescription: 'Гнучке проміжне програмне забезпечення для автентифікації в Node.js, яке підтримує різні стратегії, такі як OAuth, JWT та локальна автентифікація.',
           frDescription: 'Un middleware d\'authentification flexible pour Node.js, prenant en charge diverses stratégies comme OAuth, JWT et l\'authentification locale.',
-          firstTried: '22.02.2024',
+          firstTried: '22.02.2025',
+        },
+        {
+          name: 'Service Workers',
+          icon: '/technologies/serverWorkers.svg',
+          techType: 'Progressive Web Apps',
+          description: 'A script that runs in the background, enabling features like caching, push notifications, and offline capabilities in web applications.',
+          uaDescription: 'Скрипт, який працює у фоновому режимі, забезпечуючи такі функції, як кешування, push-сповіщення та офлайн-можливості у веб-додатках.',
+          frDescription: 'Un script qui s\'exécute en arrière-plan, permettant des fonctionnalités comme la mise en cache, les notifications push et les capacités hors ligne dans les applications web.',
+          firstTried: '15.03.2025'
+        },
+        {
+          name: 'Cloudinary',
+          icon: '/technologies/cloudinary.svg',
+          techType: 'Media Management',
+          description: 'A cloud-based media management service for storing, optimizing, and delivering images and videos efficiently.',
+          uaDescription: 'Хмарний сервіс для управління медіа, що дозволяє зберігати, оптимізувати та ефективно передавати зображення та відео.',
+          frDescription: 'Un service de gestion des médias basé sur le cloud permettant de stocker, optimiser et diffuser efficacement des images et des vidéos.',
+          firstTried: '17.03.2025'
+        },
+        {
+          name: 'Next.js',
+          icon: '/technologies/nextJs.svg',
+          techType: 'Full-Stack Web Framework',
+          description: 'A React-based framework for building server-side rendered and static web applications with enhanced performance and SEO capabilities.',
+          uaDescription: 'Фреймворк на основі React для створення серверно-рендерених та статичних веб-додатків з покращеною продуктивністю та SEO.',
+          frDescription: 'Un framework basé sur React pour créer des applications web rendues côté serveur et statiques avec des performances améliorées et des capacités SEO.',
+          firstTried: '22.03.2025'
         }
         
         
