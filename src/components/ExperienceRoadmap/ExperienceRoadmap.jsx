@@ -43,15 +43,15 @@ export default function ExperienceRoadmap() {
     },
     {
       year: '2025',
-      title: 'See you then!',
+      title: 'I just begun!',
       description:
-        'The coming year will undoubtedly bring me plenty of new experiences and knowledge as I continue to dive deeper into programming. I aim to enhance my coding and design skills, complete many new projects, and possibly explore animation and Photoshop. Who knows what opportunities await?',
-      uaTitle: 'До зустрічі!',
+        'These past few months have already brought me new experiences, technologies, and projects. I’m working on several major projects—both personal and even commercial. I never stop expanding my knowledge: I’m still mastering React and have started learning Next.js, a powerful framework. And this is just the beginning—I’ll achieve even more!',
+      uaTitle: 'Я лише почала!',
       uaDescription:
-        'Наступний рік, безсумнівно, принесе мені безліч нових вражень і знань, оскільки я продовжую поглиблювати свої знання в програмуванні. Моя мета — покращити свої навички кодування та дизайну, завершити багато нових проектів і, можливо, дослідити анімацію та Photoshop. Хто знає, які можливості чекають?',
-      frTitle: 'À bientôt!',
+        'Ці перші місяці року вже принесли мені новий досвід, технології та проєкти. Я працюю над кількома великими проєктами—як особистими, так і навіть комерційними. Я не зупиняюся на досягнутому: продовжую вдосконалювати React і почала вивчати Next.js, потужний фреймворк. І це лише початок—я досягну ще більшого!',
+      frTitle: 'Je viens de commencer !',
       frDescription:
-        "L’année à venir m’apportera sans aucun doute de nombreuses nouvelles expériences et connaissances alors que je continue à plonger plus profondément dans la programmation. Je vise à améliorer mes compétences en codage et en design, réaliser de nombreux nouveaux projets et peut-être explorer l’animation et Photoshop. Qui sait quelles opportunités m’attendent ?",
+        'Ces premiers mois de l’année m’ont déjà apporté de nouvelles expériences, technologies et projets. Je travaille sur plusieurs grands projets, aussi bien personnels que même commerciaux. Je ne cesse jamais d’élargir mes connaissances : je continue de perfectionner React et j’ai commencé à apprendre Next.js, un framework puissant. Et ce n’est que le début—je vais accomplir encore plus !',
     },
   ];
   
