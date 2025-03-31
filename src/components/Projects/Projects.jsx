@@ -24,6 +24,7 @@ export default function Projects() {
       tags: ['HTML', 'CSS', 'JS', 'React', 'API', 'Node.js', 'Bcrypt', 'JWT', 'TailwindCSS', 'MongoDB', 'React-router-dom', 'Multer', 'Swagger'],
       repoLink: 'https://github.com/ZubalYana/SaveSmart',
       videoPresentation: 'https://www.loom.com/share/144a2d69b26840d4a9186d3d8b37f902',
+      inDevelopment: true,
     },
     {
       name: 'My View',
@@ -34,6 +35,7 @@ export default function Projects() {
       tags: ['HTML', 'CSS', 'JS', 'React', 'API', 'Node.js', 'MUI', 'Lucide', 'Bcrypt', 'JWT', 'TailwindCSS', 'MongoDB', 'React-router-dom', 'Swagger'],
       repoLink: 'https://github.com/ZubalYana/My-view',
       videoPresentation: '',
+      inDevelopment: true,
     },
     {
       name: 'Rick & Morty',
@@ -151,6 +153,7 @@ export default function Projects() {
           presentationLink={project.presentationLink}
           projectLink={project.projectLink}
           videoPresentation={project.videoPresentation}
+          inDevelopment={project.inDevelopment}
         />
       ))}
     </div>
