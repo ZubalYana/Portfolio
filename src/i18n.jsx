@@ -34,6 +34,7 @@ const resources = {
       years: "years",
       months: "months",
       days: "days",
+      currentlyInDevelopment: "Currently in development",
     },
   },
   ua: {
@@ -66,8 +67,9 @@ const resources = {
       experience: "Досвід",
       years: "роки",
       months: "місяці",
-      days: "дні"
-      
+      days: "дні",
+      currentlyInDevelopment: "Наразі в розробці",
+
     },
   },
   fr: {
@@ -100,8 +102,9 @@ const resources = {
       experience: "Expérience",
       years: "ans",
       months: "mois",
-      days: "jours"
-      
+      days: "jours",
+      currentlyInDevelopment: "En cours de développement",
+
     },
   },
 };
@@ -109,13 +112,13 @@ const resources = {
 
 
 i18n
-  .use(LanguageDetector) 
-  .use(initReactI18next) 
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en', 
+    fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, 
+      escapeValue: false,
     },
   });
 

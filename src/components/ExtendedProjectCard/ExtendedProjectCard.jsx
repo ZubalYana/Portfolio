@@ -2,9 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
-import { Wrench } from 'lucide-react';
 import presentation from '/presentation.svg';
 import './ExtendedProjectCard.css'
+import { Trans } from 'react-i18next';
 
 export default function ExtendedProjectCard({ name, img, description, tags, repoLink, presentationLink, projectLink, videoPresentation, inDevelopment }) {
     return (
@@ -70,9 +70,9 @@ export default function ExtendedProjectCard({ name, img, description, tags, repo
                             </a>
                         )}
                         {inDevelopment && (
-                            <div className='ml-5 w-[200px] flex text-customWhite items-center justify-center rounded-2xl'>
+                            <div className='ml-5 min-w-[200px] w-auto flex text-customWhite items-center justify-center rounded-2xl'>
                                 <div className='w-[10px] h-[10px] rounded-full bg-red-700 mr-2 animate-pulse'></div>
-                                <p>Currently in development</p>
+                                <Trans i18nKey="currentlyInDevelopment" />
                             </div>
                         )}
                     </div>
