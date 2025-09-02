@@ -16,6 +16,16 @@ export default function Projects() {
   const { i18n } = useTranslation();
   let projects = [
     {
+      name: 'Editing Factory',
+      img: '/projectsImgs/ed.png',
+      description: 'A commercial project created in a team. Scpecifically designed for video editing studio. My part in this project included direct communication with the client, creating and correcting the design to their needs, and developing the page itself using our best practices.',
+      uaDescription: '',
+      frDescription: '',
+      tags: ['React', 'TailwindCSS', 'React-router-dom', 'Multer', 'Cloudinary'],
+      projectLink: 'https://editing-factory.com/',
+      inDevelopment: false,
+    },
+    {
       name: 'JidStro',
       img: '/projectsImgs/jidstro.png',
       description: 'A commercial project developed for UK entrepreneur Nachi Stern. JidStro is a dynamic webpage for a logistics company, fully managed through a powerful admin panel. The admin can update any text, add/edit/delete partners and their logos, and customize the page with ease.',
@@ -24,8 +34,7 @@ export default function Projects() {
       tags: ['React', 'Node.js', 'Bcrypt', 'JWT', 'TailwindCSS', 'MongoDB', 'React-router-dom', 'Multer', 'Zustand', 'MUI', 'React-query', 'Cloudinary'],
       projectLink: 'https://jidstro.com/',
       inDevelopment: false,
-    }
-    ,
+    },
     {
       name: 'Save Smart',
       img: saveSmart,
