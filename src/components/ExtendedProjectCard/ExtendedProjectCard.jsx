@@ -16,18 +16,21 @@ export default function ExtendedProjectCard({ name, img, description, tags, repo
                     <div className="separatingLine w-[2px] h-[25px] rounded-sm bg-customPurple mx-5"></div>
                     <div className="flex flex-col lg:flex-row">
                         <div className='projectLinks flex'>
-                            <a
-                                href={repoLink}
-                                className='mr-5 presentationIcon'
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faGithub}
-                                    size="2x"
-                                    className="text-customPurple"
-                                />
-                            </a>
+                            {repoLink && (
+                                <a
+                                    href={repoLink}
+                                    className='mr-5 presentationIcon'
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faGithub}
+                                        size="2x"
+                                        className="text-customPurple"
+                                    />
+                                </a>
+                            )}
+
                             {presentationLink && (
                                 <a
                                     href={presentationLink}
