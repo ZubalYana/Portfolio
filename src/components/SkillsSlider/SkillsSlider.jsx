@@ -314,10 +314,25 @@ export default function SkillsSlider() {
       uaDescription: 'Мова програмування, яка є надмножиною JavaScript із статичною типізацією, що покращує якість коду та продуктивність.',
       frDescription: 'Un sur-ensemble typé de JavaScript qui ajoute des types, améliorant la qualité, la maintenabilité et la productivité du code.',
       firstTried: '31.05.2025'
+    },
+    {
+      name: 'Qwik',
+      icon: '/technologies/qwik.svg',
+      techType: 'Web Framework',
+      description: 'A resumable front-end framework focused on instant loading, fine-grained lazy loading, and high performance for modern web apps.',
+      uaDescription: 'Фреймворк для фронтенду, зосереджений на миттєвому завантаженні, дрібнозернистому лінивому завантаженні та високій продуктивності для сучасних вебзастосунків.',
+      frDescription: 'Un framework front-end axé sur le chargement instantané, le lazy loading précis et des performances élevées pour les applications web modernes.',
+      firstTried: '09.08.2025'
+    },
+    {
+      name: 'React Native',
+      icon: '/technologies/react.svg',
+      techType: 'Mobile Development Framework',
+      description: 'A framework for building cross-platform mobile apps using JavaScript and React, enabling native performance with shared code.',
+      uaDescription: 'Фреймворк для створення кросплатформних мобільних застосунків за допомогою JavaScript і React із нативною продуктивністю та спільним кодом.',
+      frDescription: 'Un framework pour créer des applications mobiles multiplateformes avec JavaScript et React, offrant des performances natives et un code partagé.',
+      firstTried: '20.08.2025'
     }
-
-
-
 
   ];
   const settings = {
